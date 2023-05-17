@@ -1,0 +1,8 @@
+/* Style the navbar */
+img{
+    width: 232px;
+    display: inline;
+}
+#mid_container{
+    display: flex;
+}
