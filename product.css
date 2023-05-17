@@ -1,0 +1,38 @@
+.card{
+    padding:0;
+    border: none;
+  }
+.card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.carousel-control-prev {
+    left: -30px;
+}
+.carousel-control-next {
+    right: -30px;
+}
+#row1221{
+    margin-top: 9rem;
+}
+@media (min-width: 768px)
+{
+    .row-cols-md-3>* {
+        flex: 0 0 auto;
+        /* width: 21.6%; */
+    }
+}
+.row-cols-md-3>*{
+    width: 21.6%;
+}
+#btn1221{
+    /* width: 8rem; */
+    text-align: center;
+    /* margin-left: 5rem; */
+    border: none;
+    padding: 9px;
+    font-weight: bold;
+}
+#btn1221:hover{
+    color: #dc3545;
+    background-color: #fff;
+}
