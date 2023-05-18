@@ -31,7 +31,7 @@ function ans_navbar(){
 
             <!-- login and cart -->
             <div style="display: flex;" id="ans-login-cart-container">
-                <div id="ans-login-btn-container">
+                <div id="ans-login-btn-container" class="ans-golden-btn">
                     <button id="ans-login-btn">Login</button>
                 </div>
                 <div id="ans-login-cart-container">
