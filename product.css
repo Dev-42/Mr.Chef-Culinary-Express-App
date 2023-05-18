@@ -1,7 +1,10 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
-
+.container-fluid {
+  padding: 0;
+}
 .card {
     width: 14rem; /* Adjust the width as per your preference */
     padding: 0;
@@ -13,13 +16,24 @@
   .card:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+}
   .carousel-control-prev {
-    left: -30px;
+    left: -50px;
   }
 
   .carousel-control-next {
-    right: -30px;
+    right: -50px;
   }
 
   #row1221 {
@@ -51,6 +65,7 @@
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.75rem;
+    text-align: center;
   }
   
   .card-text {
@@ -90,15 +105,27 @@
     /* display: flex;
     align-items: center; */
   }
-  
+  .spacebet {
+    margin-top: 1rem;
+  }
   #restaurantHead121{
-    margin-left: 6rem;
+    margin-left: 3rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     letter-spacing: -1px;
   }
+  @media (max-width: 576px) {
+    .heading121,
+    .heading1212 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
   .heading121{
-    margin-bottom: 9px;
+    /* margin-bottom: 9px; */
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
   }
   #restaurantHead1212{
     font-family: 'Josefin Sans', sans-serif;
