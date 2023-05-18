@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<style>
+    #ans-body-container{
+        margin-top: 2px;
+    }
+    #ans-1{
+       display: grid;
+       grid-template-columns: 50% 50%;
+    }
+    #ans-1 img{
+        width: 100%;
+    }
+    #ans-pdes{
+        margin: auto 0;
+    }
+    #ans-pdes > *{
+        margin-left: 100px;
+    }
+
+    #ans-signup-btn {
+    background-color: #fed33c;
+    color: #262626;
+    border-radius: 10px;
+    padding: 10px 60px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#ans-pdes h1{
+    color: #010f29;
+    padding-bottom: 6px;
+}
+#ans-pdes h2{
+    color: #ff5c00;
+    padding-bottom: 25px;
+}
+#ans-pdes p{
+    padding-bottom: 40px;
+}
+
+#ans-menu-img-container div{
+    height: 280px;
+}
+#ans-menu-img-container{
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    justify-content: space-evenly;
+}
+</style>
+
+<body>
+    <header id="header-container">
+        <!-- import from importheader.js file -->
+    </header>
+    <div id="ans-body-container">
+       <div id="ans-1">
+            <div id="ans-pdes">
+                <h1>Tortilla wrap</h1>
+                <h2>with falafel and vegetables</h2>
+                <p>Indulge in the delightful flavors of a tortilla wrap filled with crispy falafel and a vibrant assortment of fresh vegetables. Our tortilla wrap with falafel and vegetables is a perfect fusion of textures and tastes, offering a wholesome and satisfying meal option.</p>
+                <button id="ans-signup-btn">Sign Up →</button>
+            </div>
+            <div id="ans-img">
+                <img src="wepik-export-20230518070037BBVU.jpeg" alt="">
+            </div>
+       </div>
+       <div id="ans-menu">
+            <h2 style="text-align: center;">Our Menu</h2>
+            <div id="ans-menu-img-container">
+                <div style="background-image: url(https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?w=1380&t=st=1684412573~exp=1684413173~hmac=81f925f4d2cf6a21797162b94a8564f3d3b12a21771b5f34edaabbc28b934440); background-size: cover;" ></div>
+                <div style="background-image: url(https://img.freepik.com/free-photo/side-view-shawarma-with-fried-potatoes-board-cookware_176474-3215.jpg?w=826&t=st=1684413152~exp=1684413752~hmac=39a2ce88dc08ff066bfa46cbd489877ee2c9093b55f2ace863208953d9940deb); background-size: cover;" ></div>
+                <div style="background-image: url(https://img.freepik.com/free-photo/delicious-hot-dogs-with-mustard-onion_23-2148768194.jpg?w=1380&t=st=1684413351~exp=1684413951~hmac=04161485d0fba88d025fd03976879c5b37c06b9537b99685f42613ced9dbcb2c); background-size: cover;" ></div>
+                <div style="background-image: url(https://img.freepik.com/free-photo/top-view-pepperoni-pizza-sliced-into-six-slices_141793-2157.jpg?w=1380&t=st=1684413385~exp=1684413985~hmac=392b9d17d742d25da19d214fdbcfdb0b6c7998d268e864a466ef43825f314945);background-size: cover;" ></div>
+                <div style="background-image: url(https://img.freepik.com/free-photo/whole-chicken-grill-served-with-rice-garnish-white-plate_114579-873.jpg?w=1060&t=st=1684413421~exp=1684414021~hmac=d4b08706ae1a268d21162f61ad5c4e6e50ef456dfd029c4befb8086e72776ee1);background-size: cover;" ></div>
+                <div style="background-image: url(https://img.freepik.com/free-photo/blue-lagoon-sangria-lemonade-glasses-inside-ice-tray_114579-3528.jpg?w=826&t=st=1684413471~exp=1684414071~hmac=6cfb2b6494ef50838aabef753f95a57042a3b9f2157edfbf08760b03d52945c2);background-size: cover;" ></div>
+            </div>
+       </div>
+    </div>
+</body>
+
+<script type="module">
+    import ans_navbar from "./importheader.js";
+    let header = document.getElementById("header-container");
+    header.innerHTML = ans_navbar();
+</script>   
+</html>
