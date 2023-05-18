@@ -50,11 +50,20 @@ let cardContainer = document.getElementById('cardContainer');
           btn.setAttribute('id', 'btn1221');
           btn.innerText = "Order Now";
 
+          btn.addEventListener('click',()=>{
+              storeData(item)
+          })
+
           card.append(img, cardBody, btn);
           cardCol.append(card);
           cardContainer.append(cardCol);
         });
       }
 
-let orderButton = document.getElementById('btn1221')
+
 let arr = JSON.parse(localStorage.getItem('food-items')) || [];
+function storeData(item){
+  arr.push(item)
+  localStorage.setItem('food-items',JSON.stringify(arr))
+}
+
