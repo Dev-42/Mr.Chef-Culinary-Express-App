@@ -91,7 +91,7 @@
         "description":"Serves 1 | [Desserts] [Pre Preapared] The ultimate satisfaction to your tastebuds, fried small pieces of bread, dipped in condensed milk, and dry fruits and infused with a hint of cardamom. End your Arsalan feast with this delicacy."
     },
     {
-        "img":"https://www.swiggy.com/restaurants/arsalan-ghosh-para-rd-barrackpore-kolkata-403558",
+        "img":"https://media.istockphoto.com/id/814402474/photo/indian-popular-food-dal-fry-or-traditional-dal-tadka-curry-served-with-jeera-rice-isolated.jpg?s=1024x1024&w=is&k=20&c=juAugok4ZUGnJI0tuMjO2WNgiZn-POtKPGXbHsdH71I=",
         "title":"Dal Fry",
         "price":"₹199",
         "description":"Serves 1 | Arsalan brings you the classic Indian dish, comfortable and always delicious."
@@ -137,6 +137,48 @@
         "title":"Hut Treat Meal for 4 - Veg",
         "price":"₹859",
         "description":"Serves 1 | Super Saver Meal Combo @ 859 - 2 Med Veg Pizza of Choice, 2 Classic BreadStixs, 2 Pepsi Pet Bottles."
+    },
+    {
+        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/tqwnvgnplcapz9c4jkgi",
+        "title":"Cheesy Paneer Web",
+        "price":"₹38.14",
+        "description":"Its a mildly spicy paneer puff patties that one falls in love with"
+    },
+    {
+        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/odzswpxdl26vcgnu8tlq",
+        "title":"Chocolate Floral Cake (500 Gram)",
+        "price":"₹423.73",
+        "description":"Chocolate cake decorated with chocolate ganache buttercream and fresh flowers."
+    },
+    {
+        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/hihvxqru3afzlessptbe",
+        "title":"Choco Mango ( Small )",
+        "price":"₹381.36",
+        "description":"Mango Flavoured cake decorated with cherry and chocolate nuts on the top."
+    },
+    {
+        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/e8xeystazndrvdesq2qg",
+        "title":"Premium Butterscotch ( Small )",
+        "price":"₹381.36",
+        "description":"Are you a big fan of caramel? If the answer is yes, here is a cake that is about to become your most Favourite ever! Try our caramello cake and please your taste buds!"
+    },
+    {
+        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/e8xeystazndrvdesq2qg",
+        "title":"Premium Butterscotch ( Small )",
+        "price":"₹381.36",
+        "description":"Are you a big fan of caramel? If the answer is yes, here is a cake that is about to become your most Favourite ever! Try our caramello cake and please your taste buds!"
+    },
+    {
+        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/sqs26pp6d3na50pum3yv",
+        "title":"Butterscotch Pastry",
+        "price":"₹38.14",
+        "description":"Spongy cake layered with buterscotch-soaked cream and crunchy nuts."
+    },
+    {
+        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/zmxzonaibhdrz1sxpoje",
+        "title":"Choco Chips Pastry",
+        "price":"₹38.14",
+        "description":"It's time to fall in luxury..in love with this delish pastries loaded with choco chips and white chocolate crown to satiate your chocolate desires"
     }
 ]
 }

@@ -55,3 +55,6 @@ let cardContainer = document.getElementById('cardContainer');
           cardContainer.append(cardCol);
         });
       }
+
+let orderButton = document.getElementById('btn1221')
+let arr = JSON.parse(localStorage.getItem('food-items')) || [];
