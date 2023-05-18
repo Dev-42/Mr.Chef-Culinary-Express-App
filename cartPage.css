@@ -125,11 +125,17 @@
     .ans-nav-menu.active {
         left: 0;
     }
+    #productImage{
+        width: 320px;
+    }
 }
 
 @media(max-width: 540px){
     #ans-logo-link{
         display: none;
+    }
+    #productImage{
+        width: 120px;
     }
     /* .ans-navbar{
         justify-content: space-around;
@@ -164,13 +170,23 @@
     background-color: black;
     height: 30px;
     border-radius: 20px;
+    margin: 20px 0 20px 0;
 }
 
 #button:hover {
     background-color: green;
 }
 #checkoutBtn{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: end;
 }
+#parent{
+    width: 90%;
+}
+
+/* #div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
