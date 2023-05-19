@@ -1,3 +1,21 @@
+
+
+// attach header.css file 
+// add attach a script with following lines of code
+// ---->
+// import ans_navbar from "./importheader.js";
+// let header = document.getElementById("header-container");
+// header.innerHTML = ans_navbar();
+
+// const hamburger = document.querySelector(".ans-hamburger");
+// const navMenu = document.querySelector(".ans-nav-menu");
+
+// hamburger.addEventListener("click", function () {
+//     navMenu.classList.toggle("active")
+//     hamburger.classList.toggle("active")
+// })  < ------
+
+
 function ans_navbar(){
     return ` <header id="ans-header">
     <nav class="ans-navbar">
