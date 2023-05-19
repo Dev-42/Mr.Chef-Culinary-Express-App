@@ -122,4 +122,3 @@ async function searchImp(){
   let res = await data.json()
   displayData(res)
 }
-
