@@ -1,5 +1,5 @@
 
-// link footer.css file inside html file
+// link ./footer.css file inside html file
 function ans_footer(){
     return `   <div id="ans-footer-container">
     <div id="ans-footer-1">
@@ -29,7 +29,8 @@ function ans_footer(){
         <img id="footer-logo" src="footer logo/logo.png" alt="">
     </div>
     <div id="footer-arrow-container">
-        <img id="footer-arrow"  src="footer logo/arrow.png"  alt="">
+    <a href="#"><img id="footer-arrow"  src="footer logo/arrow.png"  alt=""></a>
+        
     </div>
 </div>
 
