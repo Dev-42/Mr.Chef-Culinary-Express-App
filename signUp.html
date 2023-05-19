@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <style>
+        body{
+           
+            border: 5px;
+
+        }
+        #top{
+            margin-left: 39%;
+            margin-right: 36%;
+            text-align: center;
+            color: white;
+            background-color:rgb(23, 23, 41);
+            margin-bottom: 30px;
+            padding: 20px;
+            /* border-radius: 15px; */
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+
+        }
+
+        #mid{
+            display: flex;
+            /* justify-content: space-between; */
+            gap: 40%;
+            width: 100%;
+            /* margin-bottom: -18px; */
+            padding-left: 28px;
+            padding-right: 25px;
+            border-bottom: 3px solid silver;
+
+        }
+    #mid button{
+            /* background-color: white; */
+            border: none;
+        }
+         .input{
+            width: 100%;
+            margin: 5px; 
+            height:30px;  
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 3px solid rgb(107, 107, 119);
+            text-decoration:dashed;
+            border-collapse: collapse;
+            background-color: unset;
+            outline: none;
+
+
+            }
+            .input:hover{
+                border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 3px solid rgb(222, 222, 40);
+                    outline: none;
+
+            }
+            #container{
+            margin-top: 10px;
+            margin-left: 42%;
+            margin-right: 42%;
+            
+        }
+
+
+            #hr{
+                margin-left: 5px;
+                height: 1px;
+               background-color: silver;
+            }
+         
+            form{
+                padding-left: 8px;
+                padding-right: 5px;
+                
+                width: 100%;
+            margin: 5px; 
+            height:30px;  
+            border: none; 
+
+
+            }
+            #reg{
+                cursor: pointer;
+                background-color: unset;
+
+            }
+            #log{
+                cursor: pointer;
+                background-color: unset;
+
+            }
+            
+
+            #reg:hover{
+            /* width: 30%; */
+
+                border-bottom: 3px solid blue;
+            }
+            #log:hover{
+                border-bottom: 3px solid blue;
+                text-decoration: none;
+            }
+            #submit{
+                width: 100%;
+                height: 40px;
+                border-radius: 15px;
+                border: none;
+                background-color: gray;
+                align-items: center;
+                cursor: pointer;
+
+            }
+            #submit:hover{
+                color: white;
+                background-color:blue;
+                transform: scale(1.1);
+            }
+            #bottom{
+                padding: 5px;
+                margin-left: 25px;
+                margin-right: 25px;
+
+            }
+           
+           
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+    <h1 id="top">Welcome</h1>
+    <div id="container">
+
+<div id="mid">
+    <a href="login.html"><button id="log"> Login</button></a>
+    <a href="signUp.html"> <button  id="reg" style="border-bottom: 3px solid rgb(61,61,96);">Registration</button></a>
+</div>
+    <form action="#">
+        <div class="signUpForm">
+            <input type="text"class="input" placeholder="*       Name" id="name">
+        </div>
+
+        <div class="signUpForm">
+            <input type="password"class="input" id="password" placeholder="*       Password" >
+            <i class='bx bx-hide eye-icon' id="eye" ></i>
+
+            
+        </div>
+        
+        <div class="signUpForm">
+            <input type="number"class="input" id="mobile" placeholder="*       Mobile " >
+        </div>
+
+        <div class="signUpForm">
+            <input type="email"class="input" id="email" placeholder="*       Email " >
+        </div>
+
+      
+<div id="bottom">
+        <div id="form-link">
+            <p>  <input type="checkbox" id="checkbox"> I accept  <span><a href="terms.html">Terms of Use</a> </span></a></p>
+    </div>
+
+        <div class="signUpForm">
+            <button type="submit" id="submit">Register Now</button>
+        </div>
+    </div>
+    </form>
+    
+</div>
+    </div>
+</body>
+</html>
+<script>
+    var checkbox=document.getElementById("checkbox").addEventListener("click",check)
+   var ctr=0;
+    function check(){
+       ctr=1;
+           }  // if(checkbox==null){
+    //     alert("kam ho gaya")
+    // }
+    document.getElementById("submit").addEventListener("click",fun);
+var arr=JSON.parse(localStorage.getItem("userDetails"))||[];
+    function fun (){
+
+        event.preventDefault()
+       var name =document.getElementById("name").value;
+       var password =document.getElementById("password").value;
+       var mobile =document.getElementById("mobile").value;
+       var email =document.getElementById("email").value;
+
+       var obj={
+        name:name,
+        password:password,
+        mobile:mobile,
+        email:email
+       }
+
+       arr.push(obj);
+       console.log(arr)
+
+       if(name!=""&&password!=""&&email!=""&&mobile!=""){
+
+        if(ctr==1){
+        alert("Account create Successfully");
+        login()
+        localStorage.setItem("userDetails",JSON.stringify(arr));
+        }
+        else{
+        alert("Accept the terms and conditions")
+    }
+        
+       }
+      else if(name==""||password==""||email==""||mobile==""){
+
+        alert("Fill the details!");
+       }
+    }
+  
+    
+    function login(){
+    console.log("hello sir")
+const myTimeout = setTimeout(myGreeting, 1000);
+
+function myGreeting() {
+    window.location.href = "login.html";
+
+    // console.log("dj production")
+//   document.getElementById("demo").innerHTML = "Happy Birthday!"
+}
+    }
+
+
+</script>

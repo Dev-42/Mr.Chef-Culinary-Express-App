@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <style>
+         
+        #container{
+            margin-top: 20px;
+            margin-left: 42%;
+            margin-right: 42%;
+        }
+        #top{
+            margin-left: 39%;
+            margin-right: 36%;
+            text-align: center;
+            color: white;
+            background-color:rgb(23, 23, 41);
+            margin-bottom: 30px;
+            padding: 20px;
+            /* border-radius: 15px; */
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+
+        }
+        #mid{
+            display: flex;
+            /* justify-content: space-between; */
+            gap: 40%;
+            /* margin-bottom: -18px; */
+            padding-left: 28px;
+            width: 100%;
+            padding-right: 25px;
+            border-bottom: 3px solid silver;
+
+        }
+    #mid button{
+            /* background-color: white; */
+            border: none;
+        }
+         .input{
+            width: 100%;
+            margin: 5px; 
+            height:30px;  
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 3px solid rgb(107, 107, 119);
+            text-decoration:dashed;
+            border-collapse: collapse;
+    
+            outline: none;
+            background-color:unset
+
+
+            }
+            .input:hover{
+                border-top: none;
+            border-left: none;
+            border-right: none;
+                border-bottom: 3px solid rgb(222, 222, 40);
+                outline: none;
+
+                
+
+            }
+           .signUpForm{
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+           }
+
+
+            /* #hr{
+                margin-left: 5px;
+                height: 1px;
+               background-color: silver;
+            } */
+         
+            form{
+                /* padding-left: 8px;
+                padding-right: 5px;
+                 */
+                width: 100%;
+            margin: 5px; 
+            height:30px;  
+            border: none; 
+
+
+            }
+            #reg:hover{
+            /* width: 30%; */
+
+                border-bottom: 3px solid blue;
+            }
+            #log:hover{
+                border-bottom:none;
+                text-decoration: none;
+            }
+            #reg{
+                cursor: pointer;
+                background-color: unset;
+
+            }
+            #log{
+                cursor: pointer;
+                background-color: unset;
+
+            }
+            #submit{
+                width: 100%;
+                height: 40px;
+                border-radius: 15px;
+                border: none;
+                background-color: gray;
+                align-items: center;
+                cursor: pointer;
+
+            }
+            #submit:hover{
+                color: white;
+                background-color:blue;
+                transform: scale(1.1);
+
+            }
+            #bottom{
+                /* padding: 5px; */
+                margin-left: 45px;
+                margin-right: 25px;
+
+            }
+           
+
+    </style>
+</head>
+<body>
+    <h1 id="top">Welcome</h1>
+    <div id="container">
+
+<div id="mid">
+    <a href="login.html"><button id="log" style="border-bottom: 3px solid rgb(61, 61, 96);"> Login</button></a>
+    <a href="signUp.html"> <button  id="reg">Registration</button></a>
+</div>
+   <form action="#">
+    <div class="signUpForm">
+        <input type="text"class="input" placeholder="*       Email" id="email">
+    </div>
+
+    <div class="signUpForm">
+        <input type="password"class="input" id="password" placeholder="*       Password" >
+        <i class='bx bx-hide eye-icon' id="eye" ></i>
+
+        
+    </div>
+  
+
+    <!-- <div id="form-link">
+            <p>  <input type="checkbox"> I accept  <span><a href="terms.html">Terms of Use</a> </span></a></p>
+    </div> -->
+<div id="bottom">
+    <div class="signUpForm">
+        <button type="submit" id="submit">Log in</button>
+    </div>
+</div>
+</form>
+
+    
+  </div>
+</body>
+</html>
+<script>
+   
+    document.getElementById("submit").addEventListener("click",fun);
+
+    function fun(){
+        // event.preventDefault();
+        var arr=JSON.parse(localStorage.getItem("userDetails"));
+var ctr=0;
+        arr.forEach(ele => {
+            var email= document.getElementById("email").value;
+           var password= document.getElementById("password").value;
+
+        if(email!=ele.email&&password!=ele.password){
+                ctr=2
+            
+           }
+           else if(email!=ele.email){
+            ctr=1;
+            // alert("Enter Valid a Name")
+
+           }
+           else if(password!=ele.password){
+            ctr=0;
+            // alert("Enter Valid a Password")
+
+           }
+           else{
+            ctr=-1;
+            // alert("Successfully login")
+
+            
+           }
+            
+        });
+          
+         if(ctr==0){
+            var password= document.getElementById("password");
+
+            alert("Wrong password!")
+         }
+        else if(ctr==1){
+            var email= document.getElementById("email");
+
+            alert("Enter your registered mail id!")
+
+
+         }
+         else if(ctr==2){
+            var email= document.getElementById("email");
+            var password= document.getElementById("password");
+
+            email.style.borderColor="red"
+            password.style.borderColor="red"
+
+             alert("Enter a valid user id and password!")
+
+
+}
+else if(ctr==-1){
+
+
+
+            alert("Successfully login")
+
+home();
+
+}
+       
+
+
+    }
+    function home(){
+    console.log("hello sir")
+const myTimeout = setTimeout(myGreeting, 3000);
+
+function myGreeting() {
+    window.location.href = "home.html";
+
+    // console.log("dj production")
+//   document.getElementById("demo").innerHTML = "Happy Birthday!"
+}
+
+}
+
+
+   
+   
+</script>
