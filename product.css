@@ -134,6 +134,69 @@
     letter-spacing: -1px;
     margin-bottom: 17px;
   }
+  #hrStyle1221{
+    width: 1285px;
+    margin-bottom: 42px;
+  }
+  #sortFrist1221{
+    position: absolute;
+    top: 40rem;
+    right: 28rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #686b78;
+    cursor: pointer;
+  }
+  #sortFrist12212{
+    position: absolute;
+    top: 40rem;
+    right: 28rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #686b78;
+    cursor: pointer;
+  }
+  #sortFrist1221:hover{
+    transform: scale(1.1);
+  }
+  #sortFrist12212:hover{
+    transform: scale(1.1);
+  }
+  @media (max-width: 576px) {
+    .card {
+      width: 100%;
+    }
   
+    #row1221 {
+      margin-top: 3rem;
+    }
   
+    #sortFrist1221 {
+      position: static;
+      margin-top: 1rem;
+      /* right: initial; */
+      text-align: center;
+    }
+  
+    #hrStyle1221 {
+      /* width: 100%; */
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  #filterbtn1221{
+    position: absolute;
+    top: 40rem;
+    right: 10rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #686b78;
+    cursor: pointer;
+  }
+  
+
   
