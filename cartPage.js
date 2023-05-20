@@ -1,8 +1,11 @@
+import footer from './Components/importfooter.js'
+
+
 function data() {
     window.location.href = "payment_gateway.html"
 }
-// var cartProduct = JSON.parse(localStorage.getItem("food-items")) || [];
-var cartProduct = JSON.parse(localStorage.getItem("cartItem")) || [];
+// var cartProduct = JSON.parse(localStorage.getItem("cartItem")) || [];
+var cartProduct = JSON.parse(localStorage.getItem("food-items")) || [];
 console.log(cartProduct);
 if (cartProduct.length > 0) {
     var cartArr = [];
@@ -11,7 +14,7 @@ if (cartProduct.length > 0) {
     cartTotal();
 } else {
     var button = document.getElementById("button");
-    button.style.display = "none";
+    inpButton.style.display = "none";
     var div1 = document.createElement("div");
     div1.setAttribute("id", "div1")
     var t = document.createElement("h1");
@@ -41,12 +44,13 @@ function displayCart() {
     cartArr.map(function (elem, index) {
 
         var image = document.createElement("img");
-        image.setAttribute("src", "https://media.istockphoto.com/id/1444800538/photo/food-photos-various-entrees-appetizers-deserts-etc.jpg?b=1&s=170667a&w=0&k=20&c=fWiX2qENcpjbKrkEfBfGisnQ7VvQCxCIxMYrQyNW9i0=");
-        // image.setAttribute("alt", i.name);
+        // image.setAttribute("src", "https://media.istockphoto.com/id/1444800538/photo/food-photos-various-entrees-appetizers-deserts-etc.jpg?b=1&s=170667a&w=0&k=20&c=fWiX2qENcpjbKrkEfBfGisnQ7VvQCxCIxMYrQyNW9i0=");
+        image.setAttribute("src", elem.img);
+        // image.setAttribute("alt", elem.name);
         image.setAttribute("id", "productImage")
 
         var name = document.createElement("h4");
-        name.textContent = elem.name;
+        name.textContent = elem.title;
 
         // qty btn start
         var qtydiv = document.createElement("div");
@@ -167,3 +171,9 @@ function deleteRow(index){
     calculateTotal();
 }
 
+inpButton.addEventListener("click", () =>{
+    window.location.href = "./paymentpage/paymet.html"
+})
+
+let footer1 = document.getElementById('ans-main-footer-container')
+footer1.innerHTML = footer()
