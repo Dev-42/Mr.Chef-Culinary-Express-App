@@ -37,7 +37,7 @@
   }
 
   #row1221 {
-    margin-top: 9rem;
+    margin-top: -1rem;
   }
 
   @media (min-width: 768px) {
@@ -140,7 +140,7 @@
   }
   #sortFrist1221{
     position: absolute;
-    top: 39rem;
+    top: 691px;
     right: 28rem;
     font-size: 18px;
     font-weight: bold;
@@ -150,7 +150,7 @@
   }
   #sortFrist12212{
     position: absolute;
-    top: 39rem;
+    top: 691px;
     right: 28rem;
     font-size: 18px;
     font-weight: bold;
@@ -189,7 +189,7 @@
   }
   #filterbtn1221{
     position: absolute;
-    top: 40rem;
+    top: 681px;
     right: 10rem;
     font-size: 18px;
     font-weight: bold;
@@ -199,7 +199,7 @@
   }
   #filterbtn1221{
     position: absolute;
-    top: 616px;
+    top: 685px;
     right: 7rem;
     padding: 10px;
     border-radius: 19px;
@@ -210,7 +210,7 @@
     max-width: 444px;
     margin: 0 auto;
     position: absolute;
-    top: 615px;
+    top: 685px;
     /* right: 82px; */
     left: 395px;
   }
@@ -224,7 +224,15 @@
     background-color: #77777e3b;
     border-radius:38px;
   }
-  
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 42px;
+    right: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+}
   
 
   

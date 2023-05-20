@@ -1,3 +1,15 @@
+import navbar from './Components/importheader.js'
+let navbar1221 = document.getElementById('navbar1221')
+navbar1221.innerHTML = navbar()
+
+const hamburger = document.querySelector(".ans-hamburger");
+const navMenu = document.querySelector(".ans-nav-menu");
+
+hamburger.addEventListener("click", function () {
+    navMenu.classList.toggle("active")
+    hamburger.classList.toggle("active")
+})
+
 let cardContainer = document.getElementById('cardContainer');
 
       async function getData() {
@@ -25,6 +37,7 @@ let cardContainer = document.getElementById('cardContainer');
           card.setAttribute('class', 'card h-100');
           // This will be used for sorting
           card.setAttribute('data-price',item.price)
+          updateCardWidth(card)
 
           let img = document.createElement('img');
           img.setAttribute('class', 'card-img-top');
@@ -121,4 +134,42 @@ async function searchImp(){
   let data = await fetch(`http://localhost:3000/foods?&q=${searchBar.value}`)
   let res = await data.json()
   displayData(res)
+}
+
+// Bottom to top functionality
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 30 ||
+    document.documentElement.scrollTop > 30
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.addEventListener('resize', handleResize);
+
+function handleResize() {
+  // Call functions to adjust the layout or styles based on the window size
+   updateCardWidth();
+}
+function updateCardWidth(card) {
+  const windowWidth = window.innerWidth;
+  const cardWidth = Math.min(windowWidth * 0.9, 300); // Adjust the percentage or fixed value as needed
+  card.style.width = cardWidth + 'px';
 }
