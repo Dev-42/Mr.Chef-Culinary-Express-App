@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in page</title>
     <style>
-         
+         body{
+        background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/e33acd165456287.640c99de4ca3e.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+padding-top: 30px;
+         }
         #container{
             margin-top: 20px;
-            margin-left: 42%;
-            margin-right: 42%;
+            margin-left: 38%;
+            margin-right: 38%;
         }
         #top{
-            margin-left: 39%;
-            margin-right: 36%;
+            margin-left: 36%;
+            margin-right: 34%;
             text-align: center;
             color: white;
             background-color:rgb(23, 23, 41);
@@ -43,7 +49,7 @@
          .input{
             width: 100%;
             margin: 5px; 
-            height:30px;  
+            height:40px;  
             border-top: none;
             border-left: none;
             border-right: none;
@@ -131,11 +137,15 @@
                 margin-right: 25px;
 
             }
+            #parent{
+                padding-top: 30px;
+            }
            
 
     </style>
 </head>
 <body>
+    <div id="parent">
     <h1 id="top">Welcome</h1>
     <div id="container">
 
@@ -168,6 +178,7 @@
 
     
   </div>
+</div>
 </body>
 </html>
 <script>
@@ -243,10 +254,10 @@ home();
     }
     function home(){
     console.log("hello sir")
-const myTimeout = setTimeout(myGreeting, 3000);
+const myTimeout = setTimeout(myGreeting, 1000);
 
 function myGreeting() {
-    window.location.href = "home.html";
+    window.location.href = "index.html";
 
     // console.log("dj production")
 //   document.getElementById("demo").innerHTML = "Happy Birthday!"

@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up page</title>
     <style>
-        body{
-           
-            border: 5px;
-
-        }
+          body{
+        background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/e33acd165456287.640c99de4ca3e.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+padding-top: 30px;
+         }
         #top{
-            margin-left: 39%;
-            margin-right: 36%;
+            margin-left: 36%;
+            margin-right: 34%;
             text-align: center;
             color: white;
             background-color:rgb(23, 23, 41);
@@ -43,7 +45,7 @@
          .input{
             width: 100%;
             margin: 5px; 
-            height:30px;  
+            height:40px;  
             border-top: none;
             border-left: none;
             border-right: none;
@@ -65,8 +67,8 @@
             }
             #container{
             margin-top: 10px;
-            margin-left: 42%;
-            margin-right: 42%;
+            margin-left: 38%;
+            margin-right: 38%;
             
         }
 
@@ -130,7 +132,9 @@
                 margin-right: 25px;
 
             }
-           
+           #parent{
+            padding-top: 30px;
+           }
            
 
     </style>
@@ -229,7 +233,7 @@ var arr=JSON.parse(localStorage.getItem("userDetails"))||[];
     
     function login(){
     console.log("hello sir")
-const myTimeout = setTimeout(myGreeting, 1000);
+const myTimeout = setTimeout(myGreeting, 500);
 
 function myGreeting() {
     window.location.href = "login.html";
