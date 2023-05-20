@@ -280,11 +280,11 @@
                 <!-- item 1 -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <!-- <img style="width: 40%; height: 40%; "
+                        <img style="height: 750px; "
                             src="https://img.freepik.com/free-photo/happy-waiter-serving-food-group-cheerful-friends-pub_637285-12525.jpg?w=1380&t=st=1684419870~exp=1684420470~hmac=62189b48915998d23ae5813e7873b02b6a8414ef132873fdb66448fbec95ca3c"
-                            class="d-block w-100 " alt="..."> -->
-                        <img style="width: 40%; height: 40%; " src="scarousel images/scr1.jpg" class="d-block w-100 "
-                            alt="...">
+                            class="d-block w-100 " alt="...">
+                        <!-- <img style="width: 40%; height: 40%; " src="scarousel images/scr1.jpg" class="d-block w-100 "
+                            alt="..."> -->
                         <p>"Our customers absolutely love dining at our restaurant! The warm and inviting ambiance,
                             coupled with the exceptional service provided by our friendly staff, creates an
                             unforgettable experience. The mouthwatering dishes prepared by our talented chefs
@@ -297,9 +297,9 @@
 
                     <!-- item 2 -->
                     <div class="carousel-item">
-                        <!-- <img src="https://img.freepik.com/free-photo/young-happy-man-with-smart-phone-paying-bill-via-contactless-payment-bar_637285-1128.jpg?w=1380&t=st=1684419906~exp=1684420506~hmac=d57582ee8ccb4538d89b25c68f054f1f65f87a84d212d62cc8b0a5a422520a72"
-                            class="d-block w-100" alt="..."> -->
-                        <img src="scarousel images/scr2.jpg" class="d-block w-100" alt="...">
+                        <img style="height: 750px; " src="https://img.freepik.com/free-photo/young-happy-man-with-smart-phone-paying-bill-via-contactless-payment-bar_637285-1128.jpg?w=1380&t=st=1684419906~exp=1684420506~hmac=d57582ee8ccb4538d89b25c68f054f1f65f87a84d212d62cc8b0a5a422520a72"
+                            class="d-block w-100" alt="...">
+                        <!-- <img src="scarousel images/scr2.jpg" class="d-block w-100" alt="..."> -->
                         <p>"Customer feedback holds immense value for us. Our customers highly appreciate the
                             outstanding quality of our ingredients, highlighting our commitment to sourcing fresh and
                             locally sourced produce. Our culinary creations showcase meticulous attention to detail, and
@@ -357,6 +357,10 @@
     import ans_footer from "./Components/importfooter.js";
     let footer = document.getElementById("ans-main-footer-container");
     footer.innerHTML = ans_footer()
+
+
+    // for login
+    let user = localStorage.getItem("userDetails")
 </script>
 
 </html>

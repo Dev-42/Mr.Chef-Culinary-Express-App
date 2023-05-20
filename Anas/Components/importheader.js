@@ -33,9 +33,9 @@ function ans_navbar(){
             <li class="ans-nav-item"><input type="text" placeholder="Search"><button>
                 <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-clip-art-clkerm-vector-clip-art-online-0.png" width="20" alt="search" />
             </button></li>
-            <li class="ans-nav-item"><h3><a href="index.html">Menu</a></h3></li>
-            <li class="ans-nav-item"><h3><a href="index.html">About Us</a></h3></li>
-            <li class="ans-nav-item"><h3><a href="index.html">Contact</a></h3></li>
+            <li class="ans-nav-item"><h3><a href="#ans-menu">Menu</a></h3></li>
+            <li class="ans-nav-item"><h3><a href="#ans-about-us-text">About Us</a></h3></li>
+            <li class="ans-nav-item"><h3><a href="#ans-footer-container">Contact</a></h3></li>
         </ul>
 
         <!-- <div id="ans-header-right"> -->
