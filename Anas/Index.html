@@ -215,7 +215,8 @@
                 <p>Indulge in the delightful flavors of a tortilla wrap filled with crispy falafel and a vibrant
                     assortment of fresh vegetables. Our tortilla wrap with falafel and vegetables is a perfect fusion of
                     textures and tastes, offering a wholesome and satisfying meal option.</p>
-                <button id="ans-signup-btn" class="ans-golden-btn">Sign Up →</button>
+                    <a href="../ProductPage/product.html"><button id="ans-signup-btn" class="ans-golden-btn">Order Now →</button></a>
+               
             </div>
             <div id="ans-img">
                 <img src="wepik-export-20230518070037BBVU.jpeg" alt="">
@@ -250,6 +251,7 @@
                     <img src="menu logos/pizza.jpg" alt="">
                     <h4>Pizza</h4>
                 </div>
+                
                 <div
                     style="background-image: url(https://img.freepik.com/free-photo/whole-chicken-grill-served-with-rice-garnish-white-plate_114579-873.jpg?w=1060&t=st=1684413421~exp=1684414021~hmac=d4b08706ae1a268d21162f61ad5c4e6e50ef456dfd029c4befb8086e72776ee1);background-size: cover;">
                     <!-- <h2>East</h2> -->
@@ -322,6 +324,7 @@
             </div>
         </div>
 
+        
         <!-- subscribe text and social links -->
         <div id="ans-sub-text-and-social-links">
             <div id="ans-sub-text">
@@ -360,7 +363,14 @@
 
 
     // for login
-    let user = localStorage.getItem("userDetails")
+    let user = localStorage.getItem("username")
+    let ans_login_btn = document.getElementById("ans-login-btn");
+    if(user){
+        ans_login_btn.textContent = user;
+    } else{
+        ans_login_btn.textContent = "Sign Up"
+    }
+
 </script>
 
 </html>

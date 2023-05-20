@@ -50,11 +50,13 @@ function ans_navbar(){
             <!-- login and cart -->
             <div style="display: flex;" id="ans-login-cart-container">
                 <div id="ans-login-btn-container" class="ans-golden-btn">
-                    <button id="ans-login-btn">Login</button>
+                <a href="../Login Signup Page/signin.html"><button id="ans-login-btn">Login</button></a>
+                    
                 </div>
                 <div id="ans-login-cart-container">
-                    <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-trolley-images-pixabay-download-pictures-14.png"
-                        width="30" alt="shopping cart" />
+                <a href="../../../poject_MyChef/poject_MyChef/cartPage.html"> <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-trolley-images-pixabay-download-pictures-14.png"
+                width="30" alt="shopping cart" /></a>
+                   
                 </div>
             </div>
         <!-- </div> -->
