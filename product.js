@@ -1,4 +1,6 @@
 import navbar from './Components/importheader.js'
+import footer from './Components/importfooter.js'
+
 let navbar1221 = document.getElementById('navbar1221')
 navbar1221.innerHTML = navbar()
 
@@ -173,3 +175,6 @@ function updateCardWidth(card) {
   const cardWidth = Math.min(windowWidth * 0.9, 300); // Adjust the percentage or fixed value as needed
   card.style.width = cardWidth + 'px';
 }
+
+let footer1221 = document.getElementById('footer1221')
+footer1221.innerHTML = footer()
