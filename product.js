@@ -1,5 +1,6 @@
-import navbar from './Components/importheader.js'
-import footer from './Components/importfooter.js'
+// import navbar from './Components/importheader.js'
+import navbar from '../Anas/Components/importheader.js'
+import footer from '../Anas/Components/importfooter.js'
 
 let navbar1221 = document.getElementById('navbar1221')
 navbar1221.innerHTML = navbar()
@@ -178,3 +179,12 @@ function updateCardWidth(card) {
 
 let footer1221 = document.getElementById('footer1221')
 footer1221.innerHTML = footer()
+
+// for login
+let user = localStorage.getItem("username")
+let ans_login_btn = document.getElementById("ans-login-btn");
+if(user){
+    ans_login_btn.textContent = user;
+} else{
+    ans_login_btn.textContent = "Sign Up"
+}
