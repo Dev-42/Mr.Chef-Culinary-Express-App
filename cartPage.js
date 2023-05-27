@@ -1,5 +1,7 @@
-import footer from './Components/importfooter.js'
-
+// import footer from './Components/importfooter.js'
+import navbar from '../../Anas/Components/importheader.js'
+let navbar1234 = document.getElementById('navbar1234')
+navbar1234.innerHTML = navbar()
 
 function data() {
     window.location.href = "payment_gateway.html"
@@ -44,8 +46,8 @@ function displayCart() {
     cartArr.map(function (elem, index) {
 
         var image = document.createElement("img");
-        // image.setAttribute("src", "https://media.istockphoto.com/id/1444800538/photo/food-photos-various-entrees-appetizers-deserts-etc.jpg?b=1&s=170667a&w=0&k=20&c=fWiX2qENcpjbKrkEfBfGisnQ7VvQCxCIxMYrQyNW9i0=");
-        image.setAttribute("src", elem.img);
+        image.setAttribute("src", "https://media.istockphoto.com/id/1444800538/photo/food-photos-various-entrees-appetizers-deserts-etc.jpg?b=1&s=170667a&w=0&k=20&c=fWiX2qENcpjbKrkEfBfGisnQ7VvQCxCIxMYrQyNW9i0=");
+        // image.setAttribute("src", );
         // image.setAttribute("alt", elem.name);
         image.setAttribute("id", "productImage")
 
@@ -175,5 +177,5 @@ inpButton.addEventListener("click", () =>{
     window.location.href = "./paymentpage/paymet.html"
 })
 
-let footer1 = document.getElementById('ans-main-footer-container')
-footer1.innerHTML = footer()
+// let footer1 = document.getElementById('ans-main-footer-container')
+// footer1.innerHTML = footer()
