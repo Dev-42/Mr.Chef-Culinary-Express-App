@@ -3,5 +3,5 @@ let user = localStorage.getItem("username")
     if(user){
         ans_login_btn.textContent = user;
     } else{
-        ans_login_btn.textContent = "Sign Up"
+        ans_login_btn.textContent = "Login"
     }

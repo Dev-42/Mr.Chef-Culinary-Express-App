@@ -18,6 +18,7 @@ let cardContainer = document.getElementById('cardContainer');
       async function getData() {
         try {
           let res = await fetch('http://localhost:3000/foods');
+          // let res = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays')
           let data = await res.json();
           displayData(data);
         } catch (err) {
@@ -94,6 +95,7 @@ sortLowHigh.addEventListener('click',()=>{
 })
 async function sortLow(){
   let data  = await fetch('http://localhost:3000/foods?&_sort=price&_order=asc')
+  // let data = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays?&_sort=price&_order=asc')
   let res = await data.json()
   displayData(res)
   console.log(res)
@@ -105,6 +107,7 @@ sortHighLow.addEventListener('click',()=>{
 })
 async function sortHigh(){
   let data = await fetch('http://localhost:3000/foods?&_sort=price&_order=desc')
+  // let data = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays?&_sort=price&_order=desc')
   let res = await data.json()
   displayData(res)
   console.log(res)
@@ -117,6 +120,7 @@ filterPart.addEventListener('change',filterFun)
 
 async function filterFun(){
   let data = await fetch('http://localhost:3000/foods')
+  // let data = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays')
   let res = await data.json()
   console.log(res)
 
@@ -137,6 +141,7 @@ searchBar.addEventListener('input',searchImp)
 
 async function searchImp(){
   let data = await fetch(`http://localhost:3000/foods?&q=${searchBar.value}`)
+  // let data = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays&q=${searchBar.value}')
   let res = await data.json()
   displayData(res)
 }
@@ -188,7 +193,7 @@ let ans_login_btn = document.getElementById("ans-login-btn");
 if(user){
     ans_login_btn.textContent = user;
 } else{
-    ans_login_btn.textContent = "Sign Up"
+    ans_login_btn.textContent = "Login"
 }
 
 // Changing the state of the button

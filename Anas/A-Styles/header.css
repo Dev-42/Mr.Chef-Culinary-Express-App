@@ -52,7 +52,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 75px;
 }
 
 .ans-hamburger {
@@ -82,11 +82,14 @@
     background-color: #fed33c;
     color: #262626;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 9px 27px;
     border: none;
     font-size: 12px;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 53px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 16px;
 }
 #ans-login-btn:hover{
     background-color: #ff5c00;

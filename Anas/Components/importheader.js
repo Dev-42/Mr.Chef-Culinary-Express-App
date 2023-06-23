@@ -29,10 +29,6 @@ function ans_navbar(){
         <!-- logo -->
         <a id="ans-logo-link" href="index.html"><img src="logo.svg" width="120" alt=""></a>
         <ul class="ans-nav-menu">
-            
-            <li class="ans-nav-item"><input type="text" placeholder="Search"><button>
-                <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-clip-art-clkerm-vector-clip-art-online-0.png" width="20" alt="search" />
-            </button></li>
             <li class="ans-nav-item"><h3><a href="#ans-menu">Menu</a></h3></li>
             <li class="ans-nav-item"><h3><a href="#ans-about-us-text">About Us</a></h3></li>
             <li class="ans-nav-item"><h3><a href="#ans-footer-container">Contact</a></h3></li>
@@ -50,7 +46,7 @@ function ans_navbar(){
             <!-- login and cart -->
             <div style="display: flex;" id="ans-login-cart-container">
                 <div id="ans-login-btn-container" class="ans-golden-btn">
-                <a href="../Login Signup Page/signin.html"><button id="ans-login-btn">Login</button></a>
+                <a href="../Login Signup Page/signin.html"><button id="ans-login-btn"></button></a>
                     
                 </div>
                 <div id="ans-login-cart-container">

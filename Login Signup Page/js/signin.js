@@ -47,7 +47,10 @@ document.querySelector("#signin1221").addEventListener("click", getData);
 
     for (var i = 0; i < userCredArr.length; i++) {
       if (email === userCredArr[i].email && password === userCredArr[i].password) {
-        localStorage.setItem("username", userCredArr[i].name);
+        // Taking only the fristname from the local Storage
+        let fullName = userCredArr[i].name.split(' ')
+        let fristName = fullName[0]
+        localStorage.setItem("username",fristName);
         // window.location.href = "index.html";
         window.location.href = "../Anas/index.html"
         return;
