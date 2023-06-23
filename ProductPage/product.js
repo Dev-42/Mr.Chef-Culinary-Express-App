@@ -66,10 +66,12 @@ let cardContainer = document.getElementById('cardContainer');
           btn.setAttribute('type', 'button');
           btn.setAttribute('class', 'btn btn-danger');
           btn.setAttribute('id', 'btn1221');
+          // btn.setAttribute('class','onClick(this)')
           btn.innerText = "Order Now";
 
           btn.addEventListener('click',()=>{
               storeData(item)
+              clickBtn(btn);
           })
 
           card.append(img, cardBody, btn);
@@ -187,4 +189,11 @@ if(user){
     ans_login_btn.textContent = user;
 } else{
     ans_login_btn.textContent = "Sign Up"
+}
+
+// Changing the state of the button
+
+function clickBtn(btn){
+  btn.setAttribute('class','visited')
+  btn.innerText = "Added To Cart";
 }

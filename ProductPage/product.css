@@ -93,6 +93,28 @@
     transition: background-color 0.6s ease;
     transform: scale(1.1);
   }
+  .visited {
+    /* background-color: #FFBF00;
+    color: #fff; */
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #FFBF00;
+    color: #fff;
+    transition: #dc3545 0.3s ease;
+  }
+
+  .visited:hover{
+    background-color: #fff;
+    color: #FFBF00;
+    transition: background-color 0.6s ease;
+    transform: scale(1.1);
+  }
   
   .btn:focus {
     outline: none;
