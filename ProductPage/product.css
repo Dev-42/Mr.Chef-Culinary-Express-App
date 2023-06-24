@@ -5,6 +5,9 @@
 .container-fluid {
   padding: 0;
 }
+body{
+  overflow-x: hidden;
+}
 .card {
     width: 14rem; /* Adjust the width as per your preference */
     padding: 0;
@@ -43,7 +46,7 @@
   @media (min-width: 768px) {
     .row-cols-md-3 > * {
       flex: 0 0 auto;
-      width: 33.3333333333%;
+      width: 22.333333%;
     }
   }
 
