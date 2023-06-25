@@ -199,6 +199,14 @@ if(user){
 // Changing the state of the button
 
 function clickBtn(btn){
-  btn.setAttribute('class','visited')
-  btn.innerText = "Added To Cart";
+  let clicks = true
+  if(clicks == true){
+    btn.setAttribute('class','visited')
+    btn.innerText = "Added To Cart";
+  }
+  else{
+    btn.removeAttribute("class")
+    btn.innerText = "Order Now"
+  } 
 }
+

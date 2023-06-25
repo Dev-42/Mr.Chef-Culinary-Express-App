@@ -1,0 +1,7 @@
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('/Mr.Chef-Online-Delivery-App/PageLoader/pizzaPageLoader.gif') no-repeat center;
+    z-index: 99999;
+  }

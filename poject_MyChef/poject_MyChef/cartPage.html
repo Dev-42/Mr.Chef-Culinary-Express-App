@@ -14,11 +14,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
   <!-- MDB -->
   <link rel="stylesheet" href="./cartPage.css" />
+  <link rel="stylesheet" href='./myCart.css'>
   <script type="module" src="./cartPage.js"></script>
 </head>
 
-<body>
+<body onload="pageLoad()">
   <!-- Start your project here-->
+  <div id="loader">
+
+  </div>
   <section class="h-100" style="background-color: #eee;">
     <div class="container h-100 py-5">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -205,6 +209,13 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript"></script>
+  <script>
+    let pageloader = document.getElementById('loader')
+
+    function pageLoad(){
+        pageloader.style.display = 'none'
+    }
+  </script>
 </body>
 
 </html>

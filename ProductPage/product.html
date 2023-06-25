@@ -29,10 +29,14 @@
       
     </style>
   </head>
-  <body>
+  <body onload="pageLoad()">
     <div class="container-fluid">
       <!-- NavBar Part of Anas -->
       <div id="navbar1221">
+
+      </div>
+      <!-- Page loader funtionality -->
+      <div id="loader">
 
       </div>
       <div class="row" id="row1221">
@@ -153,5 +157,11 @@
 
       </div>
     </div>
+    <script>
+      let preloader = document.getElementById('loader')
+      function pageLoad(){
+      preloader.style.display = 'none'
+    }
+    </script>
   </body>
 </html>
