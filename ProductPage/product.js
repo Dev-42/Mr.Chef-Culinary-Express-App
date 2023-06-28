@@ -85,6 +85,7 @@ let cardContainer = document.getElementById('cardContainer');
 let arr = JSON.parse(localStorage.getItem('food-items')) || [];
 function storeData(item){
   arr.push(item)
+  console.log(arr)
   localStorage.setItem('food-items',JSON.stringify(arr))
 }
 
