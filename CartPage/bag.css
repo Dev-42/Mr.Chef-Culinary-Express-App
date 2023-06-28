@@ -1,272 +1,272 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Belanosima', sans-serif;
-    overflow-x: hidden;
-    box-sizing: border-box;
-  }
-  /* .container-fluid{
-    background-color: #fbfaf7;
-  } */
-  #item1221{
-    display: inline;
-  }
-  .bagName{
-    margin-left: 8rem;
-    margin-top: 2rem;
-    /* font-size: 20px; */
-  }
-  #bagDynamic1221{
-    font-size: 29px;
-  }
-  #bagContainer1221{
-    display: flex;
-    justify-content: space-around;
-  }
-  #quanflex1221{
-    display: flex;
-    margin-top: 53px;
-    /* position: relative; */
-    margin-left: 25px;
-  }
-  #bagImg1221{
-    width: 121px;
-    background-color: #eaeae9;
-    border-radius: 11px;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-  }
-  #bagPart1221{
-    width: 38rem;
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-  }
-  #bagImage1221{
-    width: 121px;
-    border-radius: 11px;
-  }
-  #bagItem1221{
-    display: flex;
-    /* background-color: red; */
-    padding: 23px;
-    border-radius: 3px;
-    /* width: 57rem; */
-    /* margin-left: -9px; */
-    /* border: 2px solid black; */
-    position: relative;
-    background-color: #FAF9F6;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px -2px 29px 0px;
-  }
-  #bagHead1221{
-    position: absolute;
-    /* margin-right: 3px; */
-    display: inline-block;
-    margin-left: 25px;
-    font-size: 22px;
-  }
-  #quan1221{
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #375471;
-  }
-  #minus-btn1221{
-    margin-left: 11px;
-    margin-top: -20px;
-    width: 21px;
-    cursor: pointer;
-  }
-  #plus-btn1221{
-    margin-left: 8px;
-    margin-top: 3px;
-    width: 21px;
-    height: 20px;
-    cursor: pointer;
-  }
-  #num1221{
-    width: 50px;
-    /* background-color: red; */
-    height: 25px;
-    border-radius: 2px;
-    margin-left: 8px;
-    text-align: center;
-    font-size: 17px;
-    background-color: #eaeae9;
-  }
-  #price1221{
-    margin-left: 10rem;
-    font-size: 21px;
-    letter-spacing: 1px;
-  }
-  #delete1221{
-    padding: 6px;
-    margin-left: 27px;
-    border-radius: 28px;
-    /* height: 40px; */
-    width: 11rem;
-    margin-top: 6px;
-    background-color: #fdfdfc;
-    color: #243362;
-  }
-  #delete1221:hover{
-    color: #fff;
-    background-color: black;
-    transition: 0.5s;
-  }
-  #pricePart1221{
-    background-color: #faf9f6;
-    width: 23rem;
-    height: 19rem;
-    border-radius: 4px;
-    padding: 26px;
-  }
-  #dev121{
-    margin-left: 10px;
-  }
-  #priceDev121{
-    display: flex;
-    justify-content: space-between;
-    font-size: 19px;
-    margin-left: 10px;
-    margin-top: 20px;
-  }
-  #paraDet121{
-    color: #375471;
-  }
-  #pricedet121{
-    font-size: 21px;
-    letter-spacing: 1px;
-  }
-  hr{
-    border-top-width: 1px;
-    color: inherit;
-    height: 0;
-    margin-top: 18px;
-  }
-  #priceTot121{
-    display: flex;
-    justify-content: space-between;
-  }
-  #priceDet121{
-    margin-left: 10px;
-    font-size: 19px;
-    margin-top: 18px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Belanosima', sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
-#price213{
-  font-size: 28px;
+/* .container-fluid{
+  background-color: #fbfaf7;
+} */
+#item1221{
+  display: inline;
+}
+.bagName{
+  margin-left: 8rem;
+  margin-top: 2rem;
+  /* font-size: 20px; */
+}
+#bagDynamic1221{
+  font-size: 29px;
+}
+#bagContainer1221{
+  display: flex;
+  justify-content: space-around;
+}
+#quanflex1221{
+  display: flex;
+  margin-top: 53px;
+  /* position: relative; */
+  margin-left: 25px;
+}
+#bagImg1221{
+  width: 121px;
+  background-color: #eaeae9;
+  border-radius: 11px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+#bagPart1221{
+  width: 38rem;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+#bagImage1221{
+  width: 121px;
+  border-radius: 11px;
+}
+#bagItem1221{
+  display: flex;
+  /* background-color: red; */
+  padding: 23px;
+  border-radius: 3px;
+  /* width: 57rem; */
+  /* margin-left: -9px; */
+  /* border: 2px solid black; */
+  position: relative;
+  background-color: #FAF9F6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px -2px 29px 0px;
+}
+#bagHead1221{
+  position: absolute;
+  /* margin-right: 3px; */
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 22px;
+}
+#quan1221{
+  font-size: 18px;
   letter-spacing: 1px;
-  margin-top: 16px;
-  font-weight: bold;
+  color: #375471;
 }
-#priceRem121{
-    width: 12rem;
-    height: 39px;
-    border-radius: 26px;
-    margin-left: 6px;
-    font-size: 17px;
+#minus-btn1221{
+  margin-left: 11px;
+  margin-top: -20px;
+  width: 21px;
+  cursor: pointer;
 }
-#priceRem121:hover{
+#plus-btn1221{
+  margin-left: 8px;
+  margin-top: 3px;
+  width: 21px;
+  height: 20px;
+  cursor: pointer;
+}
+#num1221{
+  width: 50px;
+  /* background-color: red; */
+  height: 25px;
+  border-radius: 2px;
+  margin-left: 8px;
+  text-align: center;
+  font-size: 17px;
+  background-color: #eaeae9;
+}
+#price1221{
+  margin-left: 10rem;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+#delete1221{
+  padding: 6px;
+  margin-left: 27px;
+  border-radius: 28px;
+  /* height: 40px; */
+  width: 11rem;
+  margin-top: 6px;
+  background-color: #fdfdfc;
+  color: #243362;
+}
+#delete1221:hover{
   color: #fff;
   background-color: black;
   transition: 0.5s;
 }
+#pricePart1221{
+  background-color: #faf9f6;
+  width: 23rem;
+  height: 19rem;
+  border-radius: 4px;
+  padding: 26px;
+}
+#dev121{
+  margin-left: 10px;
+}
+#priceDev121{
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+#paraDet121{
+  color: #375471;
+}
+#pricedet121{
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+hr{
+  border-top-width: 1px;
+  color: inherit;
+  height: 0;
+  margin-top: 18px;
+}
+#priceTot121{
+  display: flex;
+  justify-content: space-between;
+}
+#priceDet121{
+  margin-left: 10px;
+  font-size: 19px;
+  margin-top: 18px;
+}
+#price213{
+font-size: 28px;
+letter-spacing: 1px;
+margin-top: 16px;
+font-weight: bold;
+}
+#priceRem121{
+  width: 12rem;
+  height: 39px;
+  border-radius: 26px;
+  margin-left: 6px;
+  font-size: 17px;
+}
+#priceRem121:hover{
+color: #fff;
+background-color: black;
+transition: 0.5s;
+}
 
 /* Media Queries */
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
-  #pricePart1221 {
-    background-color: #faf9f6;
-    width: 23rem;
-    height: 19rem;
-    border-radius: 4px;
-    padding: 26px;
-    /* display: block; */
-    position: absolute;
-    margin-top: 15rem;
-  }
-  #bagItem1221{
-    display: flex;
-    /* background-color: red; */
-    padding: 23px;
-    border-radius: 3px;
-    /* width: 57rem; */
-    /* margin-left: -9px; */
-    /* border: 2px solid black; */
-    position: relative;
-    background-color: #FAF9F6;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px -2px 29px 0px;
-  }
-  #bagHead1221 {
-    position: absolute;
-    /* margin-right: 3px; */
-    display: inline-block;
-    margin-left: 28px;
-    font-size: 22px;
-  }
-  #quanflex1221 {
-    display: flex;
-    margin-top: 53px;
-    /* position: relative; */
-    margin-left: 25px;
-    position: absolute;
-  }
-  #delete1221 {
-    padding: 6px;
-    margin-left: 9px;
-    border-radius: 28px;
-    /* height: 40px; */
-    width: 10rem;
-    margin-top: 104px;
-    background-color: #fdfdfc;
-    color: #243362;
-  }
-  #quan1221 {
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #375471;
-    display: none;
-    margin-top: -4px;
-    position: absolute;
-    /* z-index: 2000; */
-  }
-  #minus-btn1221 {
-    margin-left: 1px;
-    /* margin-top: -24px; */
-    width: 21px;
-    cursor: pointer;
-    position: absolute;
-    margin-top: 1px;
-  }
-  #plus-btn1221 {
-    margin-left: 8px;
-    margin-top: 3px;
-    width: 21px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    margin-top: 1px;
-    margin-left: 90px;
-  }
-  #num1221 {
-    width: 52px;
-    /* background-color: red; */
-    height: 25px;
-    border-radius: 2px;
-    margin-left: 8px;
-    text-align: center;
-    font-size: 17px;
-    background-color: #eaeae9;
-    position: absolute;
-    margin-top: -1px;
-    margin-left: 30px;
-  }
-  #price1221 {
-    margin-left: 120px;
-    font-size: 19px;
-    letter-spacing: 2px;
-    margin-top: -2px;
-  }
-  #bagDynamic1221 {
-    font-size: 29px;
-    /* margin-right: -5px; */
-    margin-left: 19px;
-  }
+@media only screen and (max-width: 600px){
+/*Small smartphones [325px -> 425px]*/
+#pricePart1221 {
+  background-color: #faf9f6;
+  width: 23rem;
+  height: 19rem;
+  border-radius: 4px;
+  padding: 26px;
+  /* display: block; */
+  position: absolute;
+  margin-top: 15rem;
+}
+#bagItem1221{
+  display: flex;
+  /* background-color: red; */
+  padding: 23px;
+  border-radius: 3px;
+  /* width: 57rem; */
+  /* margin-left: -9px; */
+  /* border: 2px solid black; */
+  position: relative;
+  background-color: #FAF9F6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px -2px 29px 0px;
+}
+#bagHead1221 {
+  position: absolute;
+  /* margin-right: 3px; */
+  display: inline-block;
+  margin-left: 28px;
+  font-size: 22px;
+}
+#quanflex1221 {
+  display: flex;
+  margin-top: 53px;
+  /* position: relative; */
+  margin-left: 25px;
+  position: absolute;
+}
+#delete1221 {
+  padding: 6px;
+  margin-left: 9px;
+  border-radius: 28px;
+  /* height: 40px; */
+  width: 10rem;
+  margin-top: 104px;
+  background-color: #fdfdfc;
+  color: #243362;
+}
+#quan1221 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #375471;
+  display: none;
+  margin-top: -4px;
+  position: absolute;
+  /* z-index: 2000; */
+}
+#minus-btn1221 {
+  margin-left: 1px;
+  /* margin-top: -24px; */
+  width: 21px;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 1px;
+}
+#plus-btn1221 {
+  margin-left: 8px;
+  margin-top: 3px;
+  width: 21px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 90px;
+}
+#num1221 {
+  width: 52px;
+  /* background-color: red; */
+  height: 25px;
+  border-radius: 2px;
+  margin-left: 8px;
+  text-align: center;
+  font-size: 17px;
+  background-color: #eaeae9;
+  position: absolute;
+  margin-top: -1px;
+  margin-left: 30px;
+}
+#price1221 {
+  margin-left: 120px;
+  font-size: 19px;
+  letter-spacing: 2px;
+  margin-top: -2px;
+}
+#bagDynamic1221 {
+  font-size: 29px;
+  /* margin-right: -5px; */
+  margin-left: 19px;
+}
 }
