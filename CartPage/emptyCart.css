@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Belanosima', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  #logo1221 {
+    margin-left: 4rem;
+  }
+  
+  .checkhead1221 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #3d4152;
+    margin-top: 21px;
+  }
+  
+  .help1221 {
+    /* margin-left: -22rem;
+    margin-top: -21px; */
+    letter-spacing: 1px;
+    /* position: absolute; */
+  }
+  
+  /* For mobile screens */
+  @media only screen and (max-width: 600px) {
+    #logo1221 {
+      margin-left: 1rem;
+      width: 68px;
+    }
+  
+    .checkhead1221 {
+      font-size: 12px;
+      margin-left: -33px;
+      margin-top: 21px;
+    }
+  
+    .help1221 {
+      margin-right: 1rem;
+      margin-top: 3px;
+    }
+  }
+  /* For Tablets */
+  @media (min-width:601px) and (max-width:900px){
+    .checkhead1221 {
+      margin-top: 21px;
+      margin-right: 99px;
+    }
+  }
+
+  /* Main Content */
+#cartBody1221{
+  display: flex;
+  margin-top: 79px;
+}
+#backImg1221{
+  width: 325px;
+  height: 292px;
+  background-image: url('https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/2xempty_cart_yfxml0');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+._3Y9ZP{
+  margin-top: 27px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #535665;
+  margin-left: 628px;
+  letter-spacing: 0.5px;
+}
+.d7jCU{
+  margin-top: 8px;
+  color: #7e808c;
+  margin-left: 33rem;
+  font-size: 18px;
+}
+#cartbtn1221 {
+  width: 17rem;
+  height: 3rem;
+  margin-left: 37rem;
+  margin-top: 1rem;
+  background-color: #fc8019;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#cartbtn1221:hover {
+  /* color: #fc8019;
+  background-color: #fff; */
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 4px 14px #d4d5d9;
+}
+
+/* For mobile screens */
+@media only screen and (max-width:600px){
+  #backImg1221{
+    width: 309px;
+    height: 255px;
+    background-image: url('https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/2xempty_cart_yfxml0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  ._3Y9ZP{
+    margin-top: 4px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #535665;
+    margin-left: 103px;
+    letter-spacing: 0.5px;
+  }
+  .d7jCU{
+    margin-top: -2px;
+    color: #7e808c;
+    margin-left: 2rem;
+    font-size: 16px;
+  }
+  #cartbtn1221 {
+    width: 17rem;
+    height: 3rem;
+    margin-left: 72px;
+    background-color: #fc8019;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }  
+}
+/* For Tablet Screens */
+@media (min-width:601px) and (max-width:900px){
+  ._3Y9ZP {
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #535665;
+    margin-left: 350px;
+    letter-spacing: 0.5px;
+  }
+  .d7jCU {
+    margin-top: 4px;
+    color: #7e808c;
+    margin-left: 16rem;
+    font-size: 18px;
+  }
+  #cartbtn1221 {
+    width: 17rem;
+    height: 3rem;
+    margin-left: 20rem;
+    margin-top: 1rem;
+    background-color: #fc8019;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+  
