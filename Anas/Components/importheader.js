@@ -51,7 +51,7 @@ function ans_navbar(){
                 </div>
                 <div id="ans-login-cart-container">
                 
-                <a href="../poject_MyChef/poject_MyChef/cartPage.html"> <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-trolley-images-pixabay-download-pictures-14.png"
+                <a href="../CartPage/bag.html"> <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-trolley-images-pixabay-download-pictures-14.png"
                 width="30" alt="shopping cart" /></a>
                    
                 </div>
