@@ -86,14 +86,16 @@
   cursor: pointer;
 }
 #num1221{
-  width: 50px;
-  /* background-color: red; */
-  height: 25px;
-  border-radius: 2px;
-  margin-left: 8px;
-  text-align: center;
-  font-size: 17px;
-  background-color: #eaeae9;
+  width: 52px;
+    /* background-color: red; */
+    height: 25px;
+    border-radius: 3px;
+    margin-left: 8px;
+    text-align: center;
+    font-size: 17px;
+    background-color: #eaeae9;
+    outline: none;
+    border: 0;
 }
 #price1221{
   margin-left: 10rem;

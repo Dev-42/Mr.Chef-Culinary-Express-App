@@ -73,9 +73,10 @@ function createBagItemElement(item) {
   imgIconminus.setAttribute('id', 'minus-btn1221');
   imgIconminus.setAttribute('class', 'img-fluid');
 
-  const spanNumBox = document.createElement('span');
-  spanNumBox.setAttribute('id', 'num1221');
-  spanNumBox.textContent = '1';
+  const inputBox = document.createElement('input');
+  inputBox.setAttribute('type','number')
+  inputBox.setAttribute('id', 'num1221');
+  inputBox.setAttribute('placeholder','1')
 
   const imgIconplus = document.createElement('img');
   imgIconplus.setAttribute('src', 'https://img.freepik.com/free-icon/add-button-with-plus-symbol-black-circle_318-48599.jpg');
@@ -85,7 +86,7 @@ function createBagItemElement(item) {
   paraPrice.setAttribute('id', 'price1221');
   paraPrice.textContent = `₹${item.price}`;
 
-  mainFlex.append(span, quanBar, imgIconminus, spanNumBox, imgIconplus, paraPrice);
+  mainFlex.append(span, quanBar, imgIconminus, inputBox, imgIconplus, paraPrice);
 
   const removeCartBtn = document.createElement('button');
   removeCartBtn.setAttribute('id', 'delete1221');
@@ -117,6 +118,24 @@ function handleRemoveFromBag(event) {
 }
 
 function calculateTotal() {
+
+  let plusBtn = document.getElementById('plus-btn1221')
+  let minusBtn = document.getElementById('minus-btn1221')
+  let cartVal = document.getElementById('num1221')
+  // console.log(cartVal)
+  // let clicks = 0;
+  let quantity = parseInt(cartVal.value);
+
+  plusBtn.addEventListener('click', function() {
+    quantity = isNaN(quantity) ? 1 : quantity + 1;
+    cartVal.value = quantity;
+  });
+
+  minusBtn.addEventListener('click', function() {
+    quantity = isNaN(quantity) ? 1 : (quantity > 1 ? quantity - 1 : 1);
+    cartVal.value = quantity;
+  });
+
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
   // priceContainer.textContent = `₹ ${totalPrice}`;
   itemContainer.innerHTML = ""
