@@ -121,12 +121,13 @@ function calculateTotal() {
   // priceContainer.textContent = `₹ ${totalPrice}`;
   itemContainer.innerHTML = ""
 
-  // let priceDetDiv = document.createElement('div')
-  //   priceDetDiv.setAttribute('id','priceDet1221')
-  //     let h4 = document.createElement('h4')
-  //     h4.setAttribute('id','dev121')
-  //     h4.textContent = "Price Details"
-  //     priceDetDiv.append(h4)
+  let priceDetDiv = document.createElement('div')
+    priceDetDiv.setAttribute('id','priceDet1221')
+      let h4 = document.createElement('h4')
+      h4.setAttribute('id','dev121')
+      h4.textContent = "Price Details"
+      priceDetDiv.append(h4)
+      itemContainer.append(priceDetDiv)
 
       let hr = document.createElement('hr')
       hr.setAttribute('id','none')
@@ -162,7 +163,6 @@ function calculateTotal() {
       divDetails.append(pDet,pPrice)
       itemContainer.append(divDetails,hr,totalPriceDiv,btn)
   })
-
   // const priceDet121 = document.getElementById('priceDet121');
   // if (priceDet121) {
   //   priceDet121.textContent = `Total (${cart.length} item${cart.length > 1 ? 's' : ''})`;
