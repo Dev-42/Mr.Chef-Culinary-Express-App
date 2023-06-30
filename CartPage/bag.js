@@ -5,6 +5,8 @@ nav.innerHTML = navbar()
 
 // Cart Page logic
 let bagContainer = document.getElementById('bagPart1221')
+let items = document.getElementById('item1221')
+let clicks = 0;
 let cart = JSON.parse(localStorage.getItem('food-items')) || []
 
 if(cart.length === 0){
@@ -67,8 +69,22 @@ function displayCart(){
         removeCartBtn.textContent = "Remove from Bag"
 
         bagContents.append(h3,mainFlex,removeCartBtn)
-
         bagDiv.append(productImageDiv,bagContents);
+        
+        removeCartBtn.addEventListener('click',function(){
+            // console.log("Hello")
+            cart.pop()
+            bagDiv.style.display = 'none'
+            // console.log(cart.length)
+            items.textContent = '(' + cart.length + ')'
+        })
+        items.textContent = '(' + cart.length + ')'
+        if(cart.length == 0){
+            window.location.reload = '../CartPage/emptyCart.html'
+            console.log("Hello")
+        }
         bagContainer.append(bagDiv)
+        localStorage.removeItem('food-items')
     })
 }
+// console.log(cart.length)
