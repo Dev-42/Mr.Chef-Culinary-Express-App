@@ -2,8 +2,8 @@ import navbar from './components/navbar.js';
 
 const nav = document.getElementById('navBar');
 const bagContainer = document.getElementById('bagPart1221');
-const itemDetails = document.getElementById('')
-const priceContainer = document.getElementById('price213');
+const itemContainer = document.getElementById('pricePart1221')
+// const priceContainer = document.getElementById('price213');
 const items = document.getElementById('item1221');
 const emptyCartURL = '../CartPage/emptyCart.html';
 
@@ -118,12 +118,55 @@ function handleRemoveFromBag(event) {
 
 function calculateTotal() {
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
-  priceContainer.textContent = `₹ ${totalPrice}`;
+  // priceContainer.textContent = `₹ ${totalPrice}`;
+  itemContainer.innerHTML = ""
 
-  const priceDet121 = document.getElementById('priceDet121');
-  if (priceDet121) {
-    priceDet121.textContent = `Total (${cart.length} item${cart.length > 1 ? 's' : ''})`;
-  }
+  // let priceDetDiv = document.createElement('div')
+  //   priceDetDiv.setAttribute('id','priceDet1221')
+  //     let h4 = document.createElement('h4')
+  //     h4.setAttribute('id','dev121')
+  //     h4.textContent = "Price Details"
+  //     priceDetDiv.append(h4)
+
+      let hr = document.createElement('hr')
+      hr.setAttribute('id','none')
+
+      let totalPriceDiv = document.createElement('div')
+      totalPriceDiv.setAttribute('id','priceTot121')
+
+      let pricePara = document.createElement('p')
+      pricePara.setAttribute('id','priceDet121')
+      pricePara.textContent = `Total (${cart.length} item${cart.length > 1 ? 's' : ''})`;
+
+      let paraPrice = document.createElement('p')
+      paraPrice.setAttribute('id','price213')
+      paraPrice.textContent = `₹ ${totalPrice}`
+
+      let btn = document.createElement('button')
+      btn.setAttribute('id','priceRem121')
+      btn.textContent = "Proceed to Checkout"
+
+      totalPriceDiv.append(pricePara,paraPrice)
+  cart.map(function(item){
+  
+      let divDetails = document.createElement('div')
+      divDetails.setAttribute('id','priceDev121')
+      let pDet = document.createElement('p')
+      pDet.setAttribute('id','paraDet121')
+      pDet.textContent = item.title;
+
+      let pPrice = document.createElement('p')
+      pPrice.setAttribute('id','pricedet121')
+      pPrice.textContent = `₹ ${item.price}`
+
+      divDetails.append(pDet,pPrice)
+      itemContainer.append(divDetails,hr,totalPriceDiv,btn)
+  })
+
+  // const priceDet121 = document.getElementById('priceDet121');
+  // if (priceDet121) {
+  //   priceDet121.textContent = `Total (${cart.length} item${cart.length > 1 ? 's' : ''})`;
+  // }
 }
 
 nav.innerHTML = navbar();
