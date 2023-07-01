@@ -72,20 +72,20 @@
   letter-spacing: 1px;
   color: #375471;
 }
-#minus-btn1221{
+.minus-btn1221{
   margin-left: 11px;
   margin-top: -20px;
   width: 21px;
   cursor: pointer;
 }
-#plus-btn1221{
+.plus-btn1221{
   margin-left: 8px;
   margin-top: 3px;
   width: 21px;
   height: 20px;
   cursor: pointer;
 }
-#num1221{
+.num1221{
   width: 52px;
     /* background-color: red; */
     height: 25px;
@@ -97,10 +97,10 @@
     outline: none;
     border: 0;
 }
-#price1221{
+.price1221{
   margin-left: 10rem;
   font-size: 21px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 }
 #delete1221{
   padding: 6px;
