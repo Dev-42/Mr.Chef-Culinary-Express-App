@@ -10,10 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./bag.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Anas/A-Styles/footer.css">
   </head>
-  <body>
+  <body onload="pageLoad()">
         <div id="navBar">
             <!-- Your navbar here -->
+        </div>
+        <div id="loader">
+
         </div>
         <div class="container-fluid" id="mainCont1221">
             <div class="bagName">
@@ -30,5 +34,14 @@
                 </div>
             </div>
         </div>
+        <div id="footerAnas" style="margin-top: 11px;">
+            <!-- Footer part -->
+        </div>
   </body>
+  <script>
+    let preloader = document.getElementById('loader')
+    function pageLoad(){
+    preloader.style.display = 'none'
+  }
+  </script>
 </html>

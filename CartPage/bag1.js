@@ -1,6 +1,8 @@
 import navbar from './components/navbar.js';
+import ans_footer from '../Anas/Components/importfooter.js'
 
 const nav = document.getElementById('navBar');
+let footer = document.getElementById('footerAnas')
 const bagContainer = document.getElementById('bagPart1221');
 const itemContainer = document.getElementById('pricePart1221')
 const items = document.getElementById('item1221');
@@ -234,3 +236,4 @@ function calculateTotal() {
 }
 
 nav.innerHTML = navbar();
+footer.innerHTML = ans_footer()

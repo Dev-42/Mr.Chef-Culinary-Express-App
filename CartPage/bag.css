@@ -5,6 +5,13 @@
   overflow-x: hidden;
   box-sizing: border-box;
 }
+#loader{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url('../PageLoader/pizzaPageLoader.gif"') no-repeat center;
+  z-index: 99999;
+}
 /* .container-fluid{
   background-color: #fbfaf7;
 } */
@@ -58,7 +65,7 @@
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px -2px 29px 0px; */
   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  margin-bottom: 12px;
+  margin-bottom: 19px;
 }
 #bagHead1221{
   position: absolute;
