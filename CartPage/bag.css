@@ -202,15 +202,16 @@ transition: 0.5s;
   /* background-color: red; */
   padding: 23px;
   border-radius: 3px;
-  /* width: 57rem; */
-  /* margin-left: -9px; */
+  width: 23rem;
+  margin-left: -18px;
   /* border: 2px solid black; */
   position: relative;
   background-color: #FAF9F6;
   box-shadow: rgba(100, 100, 111, 0.2) 0px -2px 29px 0px;
+  height: 190px;
 }
 .price1221 {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   font-size: 18px;
 }
 #bagHead1221 {
@@ -287,5 +288,81 @@ transition: 0.5s;
   font-size: 29px;
   /* margin-right: -5px; */
   margin-left: 19px;
+}
+}
+
+@media only screen 
+and (min-device-width : 601px) 
+and (max-device-width : 1000px){
+  #bagDynamic1221 {
+    font-size: 25px;
+    margin-left: 252px;
+    /* z-index: 2; */
+    /* position: absolu
+    te; */
+}
+#bagItem1221 {
+  display: flex;
+  /* background-color: red; */
+  padding: 23px;
+  border-radius: 3px;
+  width: 30rem;
+  /* margin-left: -9px; */
+  /* border: 2px solid black; */
+  position: relative;
+  background-color: #FAF9F6;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px -2px 29px 0px; */
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  height: 14rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 12px;
+}
+#bagHead1221 {
+  position: absolute;
+  /* margin-right: 3px; */
+  display: inline-block;
+  margin-left: 13px;
+  font-size: 18px;
+}
+#bagImg1221 {
+  width: 103px;
+  background-color: #eaeae9;
+  border-radius: 11px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  height: 112px;
+  /* margin-left: 0px; */
+}
+#span1221{
+  display: none;
+}
+.minus-btn1221 {
+  margin-left: 0px;
+  margin-top: -21px;
+  width: 21px;
+  cursor: pointer;
+}
+.price1221 {
+  margin-left: 7rem;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+#delete1221 {
+  padding: 6px;
+  margin-left: 6px;
+  border-radius: 28px;
+  /* height: 40px; */
+  width: 10rem;
+  margin-top: 14px;
+  background-color: #fdfdfc;
+  color: #243362;
+}
+#paraDet121 {
+  color: #375471;
+  font-size: 16px;
+}
+#pricedet121 {
+  font-size: 19px;
+  letter-spacing: 1px;
+  /* margin-right: 0px; */
 }
 }
