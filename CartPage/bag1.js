@@ -3,7 +3,6 @@ import navbar from './components/navbar.js';
 const nav = document.getElementById('navBar');
 const bagContainer = document.getElementById('bagPart1221');
 const itemContainer = document.getElementById('pricePart1221')
-// const priceContainer = document.getElementById('price213');
 const items = document.getElementById('item1221');
 const emptyCartURL = '../CartPage/emptyCart.html';
 
@@ -17,7 +16,7 @@ if (cart.length === 0) {
   window.location.href = emptyCartURL;
 } else {
   displayCart();
-  calculateTotal();
+//   calculateTotal();
 }
 
 function getCartFromLocalStorage() {
@@ -37,9 +36,12 @@ function displayCart() {
   });
 
   items.textContent = `(${cart.length})`;
+
+  calculateTotal(); // Move calculateTotal() here
 }
 
 function createBagItemElement(item) {
+  // ... Your existing code ...
   const bagDiv = document.createElement('div');
   bagDiv.setAttribute('id', 'bagItem1221');
 
@@ -99,6 +101,7 @@ function createBagItemElement(item) {
 }
 
 function handleRemoveFromBag(event) {
+  // ... Your existing code ...
   if (event.target.id === 'delete1221') {
     const bagItem = event.target.closest('#bagItem1221');
     const index = Array.from(bagContainer.children).indexOf(bagItem);
@@ -122,10 +125,13 @@ function calculateTotal() {
   const minusBtns = document.querySelectorAll('.minus-btn1221');
   const quantityInputs = document.querySelectorAll('.num1221');
   const totalPriceElements = document.querySelectorAll('.price1221');
-  let outputTotal
+
+  let totalPrice = 0;
+  let outputTotal;
 
   itemContainer.innerHTML = '';
   let priceDetDiv = document.createElement('div');
+  // ...
   priceDetDiv.setAttribute('id', 'priceDet1221');
   let h4 = document.createElement('h4');
   h4.setAttribute('id', 'dev121');
@@ -138,14 +144,10 @@ function calculateTotal() {
 
   let totalPriceDiv = document.createElement('div');
   totalPriceDiv.setAttribute('id', 'priceTot121');
-
+//   let totalPrice;
   let pricePara = document.createElement('p');
   pricePara.setAttribute('id', 'priceDet121');
   pricePara.textContent = `Total (${cart.length} item${cart.length > 1 ? 's' : ''})`;
-
-
-  let totalPrice = cart.reduce((total, item) => total + item.price, 0);
-
   let paraPrice = document.createElement('p');
   paraPrice.setAttribute('id', 'price213');
   paraPrice.textContent = `₹ ${totalPrice}`;
@@ -156,9 +158,13 @@ function calculateTotal() {
 
   totalPriceDiv.append(pricePara, paraPrice);
 
-  // Iterate over each bag item
+
   cart.forEach((item, index) => {
+    // ...
     let quantity = parseInt(quantityInputs[index].value) || 0;
+    let pricePerItem = item.price;
+
+    totalPrice += pricePerItem * quantity
 
     let divDetails = document.createElement('div');
     divDetails.setAttribute('id', 'priceDev121');
@@ -172,43 +178,59 @@ function calculateTotal() {
     pPrice.textContent = `₹ ${item.price}`
     divDetails.append(pDet, pPrice);
     itemContainer.append(divDetails, hr, totalPriceDiv, btn);
+    let totalVal = 0;
 
     plusBtns[index].addEventListener('click', function() {
+      // ...
       quantity += 1;
       quantityInputs[index].value = quantity;
       outputTotal = quantityInputs[index].value
-      console.log(outputTotal)
-      pPrice.textContent = `₹ ${item.price * outputTotal}`;
+      let outInt = item.price * outputTotal
 
+      totalPrice += pricePerItem;
+
+      pPrice.textContent = `₹ ${item.price * outputTotal}`;
       updateTotalPrice(index, quantity);
+
+
+      // ...
     });
 
     minusBtns[index].addEventListener('click', function() {
+      // ...
       quantity = quantity > 1 ? quantity - 1 : 1;
       quantityInputs[index].value = quantity;
       outputTotal = quantityInputs[index].value
-      console.log(outputTotal)
+      let outInt = item.price * outputTotal
+
+      totalPrice -= pricePerItem;
+
       pPrice.textContent = `₹ ${item.price * outputTotal}`;
       updateTotalPrice(index, quantity);
+
+      // ...
     });
-    console.log(outputTotal)
+
     updateTotalPrice(index, quantity);
   });
+
+  // ...
+  paraPrice = document.querySelector('#price213');
+  if (paraPrice) {
+    totalPrice.toFixed(2)
+    paraPrice.textContent = `₹ ${totalPrice}`;
+  }
+
 
   function updateTotalPrice(index, quantity) {
     const pricePerItem = cart[index].price;
     const totalPrice = pricePerItem * quantity;
-    totalPriceElements[index].textContent = `₹ ${totalPrice}`;
+    // totalPriceElements[index].textContent = `₹ ${totalPrice}`;
+    const totalPriceElement = totalPriceElements[index];
+    if (totalPriceElement) {
+      totalPriceElement.textContent = `₹ ${totalPrice}`;
+    }
   }
-
-  // Updating the total price of the cart based upon the quantity
- 
-  
-
-  // cart.forEach((item) => {
-    
-  // });
 }
-
 
 nav.innerHTML = navbar();
