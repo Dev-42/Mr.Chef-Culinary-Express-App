@@ -177,16 +177,25 @@ transition: 0.5s;
 
 /* Media Queries */
 @media only screen and (max-width: 600px){
+#bagContainer1221 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#span1221{
+  display: none;
+}
 /*Small smartphones [325px -> 425px]*/
 #pricePart1221 {
   background-color: #faf9f6;
   width: 23rem;
-  height: 19rem;
+  height: 25rem;
   border-radius: 4px;
   padding: 26px;
   /* display: block; */
-  position: absolute;
-  margin-top: 15rem;
+  /* position: absolute; */
+  margin-top: 2rem;
+  margin-left: -15px;
 }
 #bagItem1221{
   display: flex;
@@ -200,19 +209,23 @@ transition: 0.5s;
   background-color: #FAF9F6;
   box-shadow: rgba(100, 100, 111, 0.2) 0px -2px 29px 0px;
 }
+.price1221 {
+  margin-left: 0.5rem;
+  font-size: 18px;
+}
 #bagHead1221 {
   position: absolute;
-  /* margin-right: 3px; */
-  display: inline-block;
-  margin-left: 28px;
-  font-size: 22px;
+    /* margin-right: 3px; */
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 16px;
 }
 #quanflex1221 {
-  display: flex;
-  margin-top: 53px;
-  /* position: relative; */
-  margin-left: 25px;
-  position: absolute;
+    display: flex;
+    margin-top: 53px;
+    /* position: relative; */
+    margin-left: 9px;
+    position: absolute;
 }
 #delete1221 {
   padding: 6px;
