@@ -38,7 +38,7 @@ let cardContainer = document.getElementById('cardContainer');
 
           let card = document.createElement('div');
           card.style.width = '18rem';
-          card.setAttribute('class', 'card h-100 glass-card');
+          card.setAttribute('class', 'card h-100 glass-card resdev1221');
           // This will be used for sorting
           card.setAttribute('data-price',item.price)
           updateCardWidth(card)

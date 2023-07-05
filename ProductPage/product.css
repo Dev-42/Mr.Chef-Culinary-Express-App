@@ -1,6 +1,7 @@
 *{
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 #loader{
   position: fixed;
@@ -183,7 +184,7 @@ body{
   #sortFrist12212{
     position: absolute;
     top: 569px;
-    right: 28rem;
+    right: 16rem;
     font-size: 18px;
     font-weight: bold;
     text-transform: capitalize;
@@ -205,19 +206,8 @@ body{
       margin-top: 3rem;
     }
   
-    #sortFrist1221 {
-      position: static;
-      margin-top: 1rem;
-      /* right: initial; */
-      text-align: center;
-    }
-  
-    #hrStyle1221 {
-      /* width: 100%; */
-      width: 100%;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
+    
+    
   }
   #filterbtn1221{
     position: absolute;
@@ -321,6 +311,119 @@ body{
 /* Styles for the scrollbar corner */
 ::-webkit-scrollbar-corner {
   background-color: #f1f1f1;
+}
+
+@media only screen and (max-width:600px){
+  #restaurantHead121 {
+    margin-left: 0rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-top: -64px;
+  }
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 8rem;
+    margin-top: -43px;
+  }
+  .res1234{
+    height: 54px;
+  }
+  #topCard1221 {
+    /* text-align: center; */
+    font-size: 9px;
+    margin-top: -11px;
+    width: 55px;
+    /* margin-right: 63px; */
+    margin-left: -12px;
+}
+  .cardsmall12234{
+    height: 12px;
+  }
+  #restaurantHead1212 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+    margin-top: -57px;
+    /* margin-right: 38px; */
+    margin-left: 19px;
+    font-size: 22px;
+    position: absolute;
+}
+  #hrStyle1221 {
+    /* width: 100%; */
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    margin-left: -100px;
+  }
+  #sortFrist1221 {
+    position: static;
+    margin-top: -49px;
+    /* right: initial; */
+    text-align: center;
+    margin-left: -477px;
+    font-size: 10px;
+  }
+  #sortFrist12212 {
+    position: absolute;
+    top: 318px;
+    right: 3rem;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #686b78;
+    cursor: pointer;
+    left: 108px;
+  }
+  #filterbtn1221 {
+    position: absolute;
+    top: 312px;
+    right: 142px;
+    padding: 5px;
+    border-radius: 19px;
+    width: 49px;
+    font-size: 10px;
+  }
+  .resdev1221 {
+    margin-left: -50px;
+    /* height: 0px; */
+  }
+  #inputSearch1221 {
+    flex: 1;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 5rem;
+    background-color: #77777e3b;
+    border-radius: 38px;
+    margin-left: -140px;
+    margin-top: -486px;
+  }
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 92px;
+    right: 438px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 49px;
+    height: 49px;
+  } 
+  .upbtn1221 {
+    width: 16px;
+    height: 27px;
+  }
+  #loader {
+    position: fixed;
+    width: 82%;
+    height: 95vh;
+    background: #fff url(../PageLoader/pizzaPageLoader.gif) no-repeat center;
+    z-index: 99999;
+  }
 }
 
 
