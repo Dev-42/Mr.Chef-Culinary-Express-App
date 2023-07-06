@@ -210,4 +210,3 @@ function clickBtn(btn){
     btn.innerText = "Order Now"
   } 
 }
-
