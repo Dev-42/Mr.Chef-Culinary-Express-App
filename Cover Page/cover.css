@@ -53,15 +53,61 @@
     /* margin: auto; */
     text-align: center;
     font-size: 3.1rem;
-    margin-left: 64px;
+    margin-left: 40px;
     height: 133px;
 }
 #logoDev2{
-    margin-left: 28rem;
+    margin-left: 27rem;
     /* font-size: 27rem; */
     width: 10rem;
 }
 
+#popular1221{
+    text-align: center;
+    margin-top: 35px;
+    letter-spacing: 1px;
+    font-size: 39px;
+}
+#indiaDev1221{
+    font-weight: bold;
+    display: inline;
+}
+#imgIndia1221{
+    margin-left: 7px;
+}
+.country-description{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.country-para1221{
+    margin: 0px;
+    max-width: 90rem;
+    font-size: 24px;
+    line-height: 150%;
+    color: rgb(105, 105, 105);
+}
+.footerRow1221{
+    background-color: #fffbeb;
+    margin-top: 20px;
+}
+.paraFooter1221{
+    display: inline;
+    margin-left: 34rem;
+    font-size: 17px;
+    font-weight: bold;
+    word-spacing: 1px;
+}
+.footerCol1221{
+    padding: 20px;
+}
+.anchorLinks1221{
+    text-decoration: none;
+    color: black;
+    margin-left: 8px;
+}
 @media only screen and (max-width: 600px) {
 	#listDev1221 {
         margin-left: 1rem;
@@ -109,6 +155,27 @@
         width: 100%;
         height: 69vh;
     }
+    #popular1221 {
+        text-align: center;
+        margin-top: 40px;
+        letter-spacing: 1px;
+        font-size: 34px;
+    }
+    .country-para1221 {
+        margin: 0px;
+        max-width: 90rem;
+        font-size: 15px;
+        line-height: 150%;
+        color: rgb(105, 105, 105);
+        padding: 18px;
+        /* margin-bottom: 14px; */
+        margin-top: -17px;
+    }
+    .footerCol1221 {
+        /* padding: 20px; */
+        margin-left: 60px;
+        /* font-size: 13px; */
+    }
 }
 /* For Tablets */
 @media screen and (min-width:601px) and (max-width:1024px){
@@ -121,5 +188,38 @@
     }
     .ancDev3{
         font-size: 20px;
+    }
+    #logoDev2 {
+        margin-left: 30rem;
+        /* font-size: 27rem; */
+        width: 10rem;
+    }
+    #coverImg1221 {
+        z-index: -1;
+        min-height: 100%;
+        min-width: 1024px;
+        width: 100%;
+        height: 110vh;
+    }
+    #conDev1221 {
+        position: absolute;
+        top: 9rem;
+        left: -7rem;
+    }
+    .country-para1221 {
+        margin: 0px;
+        max-width: 90rem;
+        font-size: 17px;
+        line-height: 156%;
+        color: rgb(105, 105, 105);
+        margin-top: -8px;
+    }
+    .paraFooter1221 {
+        display: inline;
+        margin-left: 17rem;
+        font-size: 17px;
+        font-weight: bold;
+        word-spacing: 1px;
+        /* margin-top: -31px; */
     }
  }
