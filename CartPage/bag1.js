@@ -166,7 +166,8 @@ function calculateTotal() {
     let quantity = parseInt(quantityInputs[index].value) || 0;
     let pricePerItem = item.price;
 
-    totalPrice += pricePerItem * quantity
+    totalPrice += (pricePerItem * quantity)
+    console.log(totalPrice)
 
     let divDetails = document.createElement('div');
     divDetails.setAttribute('id', 'priceDev121');
