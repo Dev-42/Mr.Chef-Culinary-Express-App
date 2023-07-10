@@ -218,6 +218,68 @@
     line-height: inherit;
     font-size: inherit;
 }
+.offcanvas {
+    width: 320px;
+  }
+  
+  .offcanvas-body {
+    padding: 20px;
+  }
+  
+  .offcanvas-title {
+    margin-bottom: 20px;
+  }
+  
+  .otp-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .otp-form label {
+    margin-bottom: 5px;
+  }
+  
+  .otp-form input {
+    margin-bottom: 2px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 9px;
+  }
+  
+  .send-otp-btn,
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .send-otp-btn:hover,
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .send-otp-btn:disabled,
+  .submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .otp-boxes {
+    margin-top: 20px;
+  }
+  
+  .otp-box {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
 
 @media only screen and (max-width: 600px) {
 	#listDev1221 {

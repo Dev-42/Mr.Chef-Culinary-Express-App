@@ -18,16 +18,29 @@
               <img src="../Anas/logo.svg" alt="Mr.Chef Logo">
                 <a href="https://www.zomato.com/partner-with-us" class="anchorNav1221 marancDev1221">Add restaurant</a>
                 <a class="anchorNav1221 ancDev2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Log in</a>
+
                 <!-- offcanvas login -->
                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                    <div class="imageChef">
+                      <img src="./Mr.Chef Redefined logo.jpg" alt="Mr.Chef Logo" style="width: 21rem;margin-left: 15px;">
+                    </div>
+                    
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
-                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel" style="text-align: center;">Login</h5>
+                    <form id="otpForm" class="otp-form">
+                      <label for="otp" class="form-label">Enter OTP:</label>
+                      <input type="number" class="form-control" id="otp" name="otp" placeholder="Enter the OTP" required>
+                      
+                      <button type="submit" id="submitBtn" class="btn">Submit</button>
+                    </form>
+                    
+                    <div class="otp-boxes" id="otpBoxes"></div>
                   </div>
                 </div>
+
                 <!-- Sign up offcanvas -->
                 <a class="anchorNav1221 ancDev3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSignup" aria-controls="offcanvasSignup">Sign up</a>
               <!-- offcanvas signup -->
