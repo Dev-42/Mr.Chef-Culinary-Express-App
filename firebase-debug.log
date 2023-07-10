@@ -1,0 +1,65 @@
+[debug] [2023-07-10T12:23:19.103Z] ----------------------------------------------------------------------
+[debug] [2023-07-10T12:23:19.106Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\devbh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-07-10T12:23:19.107Z] CLI Version:   12.4.3
+[debug] [2023-07-10T12:23:19.107Z] Platform:      win32
+[debug] [2023-07-10T12:23:19.107Z] Node Version:  v16.16.0
+[debug] [2023-07-10T12:23:19.108Z] Time:          Mon Jul 10 2023 17:53:19 GMT+0530 (India Standard Time)
+[debug] [2023-07-10T12:23:19.108Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-10T12:23:19.117Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-10T12:23:19.117Z] > authorizing via signed-in user (codingcontests42@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\devbh\Desktop\Mr.Chef\Mr.Chef-Online-Delivery-App
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-10T12:26:08.913Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-07-10T12:26:09.799Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-07-10T12:26:09.800Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project mrchef-authentication (MrChef-Authentication) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-07-10T12:26:47.578Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-07-10T12:26:47.579Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/mrchef-authentication
+[debug] [2023-07-10T12:26:49.655Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com 200
+[debug] [2023-07-10T12:26:49.655Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-07-10T12:26:49.656Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-07-10T12:26:49.656Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/mrchef-authentication
+[debug] [2023-07-10T12:26:51.842Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-07-10T12:26:51.842Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-07-10T12:27:01.855Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-07-10T12:27:01.855Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/mrchef-authentication
+[debug] [2023-07-10T12:27:03.859Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com 200
+[debug] [2023-07-10T12:27:03.860Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mrchef-authentication/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-07-10T12:27:03.870Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mrchef-authentication [none]
+[debug] [2023-07-10T12:27:04.400Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mrchef-authentication 200
+[debug] [2023-07-10T12:27:04.400Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mrchef-authentication {"projectId":"mrchef-authentication","projectNumber":"725459431701","displayName":"MrChef-Authentication","name":"projects/mrchef-authentication","resources":{"hostingSite":"mrchef-authentication"},"state":"ACTIVE","etag":"1_a3ea7ebd-6ddb-4bb7-8729-f9ae86221ee0"}
+[debug] [2023-07-10T12:27:25.719Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/mrchef-authentication/locations/us-central1/instances databaseId=mrchef-authentication-default-rtdb&validateOnly=true
+[debug] [2023-07-10T12:27:25.720Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/mrchef-authentication/locations/us-central1/instances {"type":"default_database"}
+[debug] [2023-07-10T12:27:27.701Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/mrchef-authentication/locations/us-central1/instances 200
+[debug] [2023-07-10T12:27:27.701Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/mrchef-authentication/locations/us-central1/instances {"name":"projects/725459431701/locations/us-central1/instances/mrchef-authentication-default-rtdb","project":"projects/725459431701","databaseUrl":"https://mrchef-authentication-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-07-10T12:27:27.704Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/mrchef-authentication/locations/us-central1/instances databaseId=mrchef-authentication-default-rtdb
+[debug] [2023-07-10T12:27:27.704Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/mrchef-authentication/locations/us-central1/instances {"type":"default_database"}
+[debug] [2023-07-10T12:27:29.530Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/mrchef-authentication/locations/us-central1/instances 200
+[debug] [2023-07-10T12:27:29.530Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/mrchef-authentication/locations/us-central1/instances {"name":"projects/725459431701/locations/us-central1/instances/mrchef-authentication-default-rtdb","project":"projects/725459431701","databaseUrl":"https://mrchef-authentication-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 

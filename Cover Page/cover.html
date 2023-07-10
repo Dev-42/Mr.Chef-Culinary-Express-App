@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+    <script type="module" src="./coverPage.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -31,11 +32,11 @@
                   <div class="offcanvas-body">
                     <h5 class="offcanvas-title" id="offcanvasScrollingLabel" style="text-align: center;">Login</h5>
                     <form id="otpForm" class="otp-form">
-                      <label for="otp" class="form-label">Phone Number</label>
-                      <input type="number" class="form-control" id="otp" name="otp" placeholder="Enter your phone number" required>
-                      <button type="submit" id="submitBtn" class="btn" id="otpGet">Get OTP</button>
-                      <label for="otp" class="form-label" style="margin-top: 12px;">Enter OTP:</label>
-                      <input type="number" class="form-control" id="otp" name="otp" placeholder="Enter the OTP" required>
+                      <label for="otp" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="loginEmail" name="otp" placeholder="Enter your email" required>
+                      <!-- <button type="submit" id="submitBtn" class="btn" id="otpGet">Get OTP</button> -->
+                      <label for="otp" class="form-label" style="margin-top: 12px;">Password</label>
+                      <input type="password" class="form-control" id="loginPassword" name="otp" placeholder="Enter your password" required>
                       
                       <button type="submit" id="submitBtn" class="btn">Submit</button>
                       <h4 id="orSep1221">or</h4>
@@ -74,11 +75,15 @@
                       <label for="signupEmail" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" required>
                     </div>
+                    <div class="mb-3">
+                      <label for="signupEmail" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="signupPassword" placeholder="Create your password" required>
+                    </div>
                     
                     <!-- Add more fields as needed -->
 
                     <!-- Signup button -->
-                    <button type="submit" class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Create Account</button>
+                    <button type="submit" class="btn" id="createAccount1221" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Create Account</button>
                     <h4 id="orSep1221">or</h4>
                     <div class="sc-eqGige cjvBla">
                       <div role="button" tabindex="0" aria-label="Continue with Google" class="sc-izfUZz hsnqgO"><svg width="24" height="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
