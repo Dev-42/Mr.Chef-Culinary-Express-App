@@ -128,6 +128,7 @@
     font-size: 17px;
     letter-spacing: 1px;
     word-spacing: 1px;
+    margin-bottom: 0;
   }
   
   .form-control {
@@ -138,6 +139,9 @@
     color: #555;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  #otpGet{
+    background-color: #4CAF50;
   }
   
   .btn {
