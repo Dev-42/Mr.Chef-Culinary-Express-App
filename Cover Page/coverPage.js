@@ -18,6 +18,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 console.log(app)
+
 document.getElementById('createAccount1221').addEventListener('click',function(e){
     e.preventDefault();
     let email = document.getElementById('signupEmail').value;
