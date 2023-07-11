@@ -93,3 +93,33 @@ document.getElementById('googleSignIn1').addEventListener('click',function(){
   });
 
 })
+
+document.getElementById('googleSignIn2').addEventListener('click',function(){
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth();
+  auth.useDeviceLanguage();
+
+  signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    console.log(user)
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+    window.location.href = '../Anas/index.html'
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+    alert("Auth Failed")
+  });
+
+})
