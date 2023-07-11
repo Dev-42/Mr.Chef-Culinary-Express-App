@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+import { GoogleAuthProvider,signInWithPopup } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -60,4 +61,35 @@ document.getElementById('submitBtn').addEventListener('click',function(e){
         const errorMessage = error.message;
         alert("Invalid Credentials!!!")
     });
+})
+
+// Google sign in
+document.getElementById('googleSignIn1').addEventListener('click',function(){
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth();
+  auth.useDeviceLanguage();
+
+  signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    console.log(user)
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+    window.location.href = '../Anas/index.html'
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+    alert("Auth Failed")
+  });
+
 })
