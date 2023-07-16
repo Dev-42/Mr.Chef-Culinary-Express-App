@@ -136,15 +136,27 @@ async function filterFun(){
   displayData(fillArr)
 }
 
-// Search bar implementation
-let searchBar = document.getElementById('inputSearch1221')
-searchBar.addEventListener('input',searchImp)
+// Search bar implementation with debouncing
+let searchBar = document.getElementById('inputSearch1221');
+let timeoutId;
 
-async function searchImp(){
-  let data = await fetch(`http://localhost:3000/foods?&q=${searchBar.value}`)
-  // let data = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays&q=${searchBar.value}')
-  let res = await data.json()
-  displayData(res)
+searchBar.addEventListener('input', debounce(searchImp, 500));
+
+async function searchImp() {
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(async () => {
+    let data = await fetch(`http://localhost:3000/foods?&q=${searchBar.value}`);
+    let res = await data.json();
+    displayData(res);
+  }, 500);
+}
+
+function debounce(func, delay) {
+  let timeoutId;
+  return function () {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(func, delay);
+  };
 }
 
 // Bottom to top functionality

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery Website</title>
+  <script defer src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script defer src="./razor.js"></script>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .proceed-button {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .proceed-button:hover {
+      background-color: #45a049;
+    }
+    
+    /* Add your CSS animations here */
+    .fade-in {
+      animation: fadeInAnimation 1s ease-in;
+    }
+    
+    @keyframes fadeInAnimation {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    /* Add your responsive CSS styles here */
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      
+      h1 {
+        font-size: 24px;
+      }
+      
+      .proceed-button {
+        width: 100%;
+      }
+    }
+    
+    /* Additional responsive styles */
+    @media screen and (max-width: 400px) {
+      input[type="text"] {
+        font-size: 14px;
+      }
+      
+      .error {
+        font-size: 12px;
+        /* color: red; */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container fade-in">
+    <h1>Customer Details Page</h1>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <div id="nameError" class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email">
+        <div id="emailError" class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+        <div id="phoneError" class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" placeholder="Enter your street">
+        <div id="streetError" class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="Enter your city">
+        <div id="cityError" class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" placeholder="Enter your state">
+        <div id="stateError" class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip" placeholder="Enter your ZIP code">
+        <div id="zipError" class="error"></div>
+      </div>
+      <button class="proceed-button" onclick="validateForm()" id="btn">Proceed to Payment</button>
+    </form>
+
+    <script>
+      function validateForm() {
+        const form = document.getElementById('orderForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const phoneInput = document.getElementById('phone');
+        const streetInput = document.getElementById('street');
+        const cityInput = document.getElementById('city');
+        const stateInput = document.getElementById('state');
+        const zipInput = document.getElementById('zip');
+        let isValid = true;
+
+        let razorName = nameInput.value
+        let razorEmail = emailInput.value
+        let razorPhone = phoneInput.value
+        localStorage.setItem('CustomerName',JSON.stringify(razorName))
+        localStorage.setItem('CustomerEmail',JSON.stringify(razorEmail))
+        localStorage.setItem('CustomerPhone',JSON.stringify(razorPhone))
+        // Reset error messages
+        const errorElements = document.getElementsByClassName('error');
+        for (let i = 0; i < errorElements.length; i++) {
+          errorElements[i].textContent = '';
+        }
+
+        // Validate name
+        if (nameInput.value.trim() === '') {
+          document.getElementById('nameError').textContent = 'Please enter your name';
+          isValid = false;
+        }
+
+        // Validate email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value.trim())) {
+          document.getElementById('emailError').textContent = 'Please enter a valid email address';
+          isValid = false;
+        }
+
+        // Validate phone
+        const phoneRegex = /^\d{10}$/;
+        if (!phoneRegex.test(phoneInput.value.trim())) {
+          document.getElementById('phoneError').textContent = 'Please enter a 10-digit phone number';
+          isValid = false;
+        }
+
+        // Validate street
+        if (streetInput.value.trim() === '') {
+          document.getElementById('streetError').textContent = 'Please enter your street address';
+          isValid = false;
+        }
+
+        // Validate city
+        if (cityInput.value.trim() === '') {
+          document.getElementById('cityError').textContent = 'Please enter your city';
+          isValid = false;
+        }
+
+        // Validate state
+        if (stateInput.value.trim() === '') {
+          document.getElementById('stateError').textContent = 'Please enter your state';
+          isValid = false;
+        }
+
+        // Validate ZIP code
+        const zipRegex = /^\d{6}$/;
+        if (!zipRegex.test(zipInput.value.trim())) {
+          document.getElementById('zipError').textContent = 'Please enter a 5-digit ZIP code';
+          isValid = false;
+        }
+
+        if (isValid) {
+          // Form is valid, proceed to payment or further actions
+          console.log('Form is valid!');
+          // Add your logic here for further actions, such as redirecting to payment page or submitting the form
+        } else {
+          // Form is invalid, prevent submission
+          event.preventDefault();
+        }
+      }
+    </script>
+  </div>
+</body>
+</html>

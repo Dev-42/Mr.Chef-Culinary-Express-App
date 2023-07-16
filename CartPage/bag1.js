@@ -154,9 +154,12 @@ function calculateTotal() {
   paraPrice.setAttribute('id', 'price213');
   paraPrice.textContent = `₹ ${totalPrice}`;
 
+  let anchorButton = document.createElement('a')
+  anchorButton.setAttribute('href','../RazorPay Payment Integration/razor.html')
   let btn = document.createElement('button');
   btn.setAttribute('id', 'priceRem121');
   btn.textContent = 'Proceed to Checkout';
+  anchorButton.append(btn)
 
   totalPriceDiv.append(pricePara, paraPrice);
 
@@ -180,7 +183,7 @@ function calculateTotal() {
     pPrice.setAttribute('id', 'pricedet121');
     pPrice.textContent = `₹ ${item.price}`
     divDetails.append(pDet, pPrice);
-    itemContainer.append(divDetails, hr, totalPriceDiv, btn);
+    itemContainer.append(divDetails, hr, totalPriceDiv, anchorButton);
     let totalVal = 0;
 
     plusBtns[index].addEventListener('click', function() {
