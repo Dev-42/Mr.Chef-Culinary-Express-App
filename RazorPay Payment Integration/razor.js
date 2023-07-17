@@ -88,7 +88,7 @@ var options = {
     },
   
   "handler": function (response) {
-    alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+    window.location.href = './succesPay.html'
   },
   "modal": {
     "ondismiss": function () {
