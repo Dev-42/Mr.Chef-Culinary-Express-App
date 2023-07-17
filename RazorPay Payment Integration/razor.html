@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Delivery Website</title>
   <script defer src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  <script defer src="./razor.js"></script>
+  <script type="module" defer src="./razor.js"></script>
   <style>
     /* Add your CSS styles here */
     body {
@@ -208,7 +208,7 @@
         // Validate ZIP code
         const zipRegex = /^\d{6}$/;
         if (!zipRegex.test(zipInput.value.trim())) {
-          document.getElementById('zipError').textContent = 'Please enter a 5-digit ZIP code';
+          document.getElementById('zipError').textContent = 'Please enter a 6-digit ZIP code';
           isValid = false;
         }
 

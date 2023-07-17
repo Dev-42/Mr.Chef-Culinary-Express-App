@@ -225,6 +225,7 @@ function calculateTotal() {
   if (paraPrice) {
     totalPrice.toFixed(2)
     paraPrice.textContent = `₹ ${totalPrice}`;
+    localStorage.setItem('totalCartPrice',JSON.stringify(totalPrice))
   }
 
 
