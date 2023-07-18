@@ -416,39 +416,7 @@
     console.log(app)
 
     document.getElementById("ans-login-btn").addEventListener('click',function(){
-        const auth = getAuth();
-        signOut(auth).then(() => {
-            // Sign-out successful.
-            Swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, signout!'
-                }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire(
-                    'Signed Out',
-                    'Thank you for being a part of our culinary adventure. We hope you enjoyed your time with us and look forward to welcoming you back soon. Bon appétit',
-                    'success'
-                    )
-                    window.location.href = '../Cover Page/cover.html'
-                }
-                })
-        }).catch((error) => {
-            // An error happened.
-            Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong!',
-            footer: '<a href="">Why do I have this issue?</a>'
-            })
-
-        });
+        window.location.href = '../Cover Page/cover.html'
     })
-    
   </script>
-
 </html>

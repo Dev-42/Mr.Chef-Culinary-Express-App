@@ -46,7 +46,7 @@ function ans_navbar(){
             <!-- login and cart -->
             <div style="display: flex;" id="ans-login-cart-container">
                 <div id="ans-login-btn-container" class="ans-golden-btn">
-                <a href=""><button id="ans-login-btn">SIGNOUT</button></a>
+                <a href="../Cover Page/cover.html"><button id="ans-login-btn">SIGNOUT</button></a>
                     
                 </div>
                 <div id="ans-login-cart-container">
