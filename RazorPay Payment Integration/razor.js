@@ -97,7 +97,7 @@ var options = {
         console.log("Checkout form closed by the user");
       } else {
         txt = "You pressed Cancel!";
-        console.log("Complete the Payment")
+        window.location.href = './unsuccessfulPay.html'
       }
     }
   }
