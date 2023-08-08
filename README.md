@@ -38,7 +38,7 @@ Mr.Chef's foundation is fortified by a robust and harmonious tech stack:
 
 1. Clone the repository to your local machine.
 2. Open the project in your favorite code editor.
-3. Launch the exquisite index.html file in a web browser.
+3. Launch the exquisite cover.html file from the CoverPage folder in a web browser.
 4. Embark on your culinary journey – sign in or sign up using Firebase-enabled Email or Google authentication.
 5. Navigate the artful interface, exploring, selecting, and curating your gastronomic desires.
 6. Relish the seamless transaction experience, powered by the real-time Razorpay API integration.
