@@ -17,7 +17,7 @@ let cardContainer = document.getElementById('cardContainer');
 
       async function getData() {
         try {
-          let res = await fetch('http://localhost:3000/foods');
+          let res = await fetch('https://mr-chef-recipies.onrender.com/foods');
           // let res = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays')
           let data = await res.json();
           displayData(data);
@@ -94,8 +94,9 @@ let sortLowHigh = document.getElementById('sortFrist1221')
 sortLowHigh.addEventListener('click',()=>{
   sortLow()
 })
+// https://mr-chef-recipies.onrender.com/foods&_sort=price&_order=asc
 async function sortLow(){
-  let data  = await fetch('http://localhost:3000/foods?&_sort=price&_order=asc')
+  let data  = await fetch('https://mr-chef-recipies.onrender.com/foods?&_sort=price&_order=asc')
   // let data = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays?&_sort=price&_order=asc')
   let res = await data.json()
   displayData(res)
@@ -107,7 +108,7 @@ sortHighLow.addEventListener('click',()=>{
   sortHigh()
 })
 async function sortHigh(){
-  let data = await fetch('http://localhost:3000/foods?&_sort=price&_order=desc')
+  let data = await fetch('https://mr-chef-recipies.onrender.com/foods?&_sort=price&_order=desc')
   // let data = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays?&_sort=price&_order=desc')
   let res = await data.json()
   displayData(res)
@@ -120,7 +121,7 @@ let filterPart = document.getElementById('filterbtn1221')
 filterPart.addEventListener('change',filterFun)
 
 async function filterFun(){
-  let data = await fetch('http://localhost:3000/foods')
+  let data = await fetch('https://mr-chef-recipies.onrender.com/foods')
   // let data = await fetch('https://api.json-generator.com/templates/-lXcV44JeNYg/data?access_token=qky8mjozwqrlw93do8lcnl50a9yv114010r0gays')
   let res = await data.json()
   console.log(res)
@@ -145,7 +146,7 @@ searchBar.addEventListener('input', debounce(searchImp, 500));
 async function searchImp() {
   clearTimeout(timeoutId);
   timeoutId = setTimeout(async () => {
-    let data = await fetch(`http://localhost:3000/foods?&q=${searchBar.value}`);
+    let data = await fetch(`https://mr-chef-recipies.onrender.com/foods?&q=${searchBar.value}`);
     let res = await data.json();
     displayData(res);
   }, 500);
