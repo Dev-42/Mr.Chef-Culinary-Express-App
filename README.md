@@ -50,6 +50,6 @@ Mr.Chef's foundation is fortified by a robust and harmonious tech stack:
 
 **Stay Connected!**
 
-We eagerly await your questions, feedback, and culinary stories. Reach out to us at contact@mrcchefapp.com to share your journey and become a part of the Mr.Chef community.
+We eagerly await your questions, feedback, and culinary stories. Reach out to us at devbhattacharya42@gmail.com to share your journey and become a part of the Mr.Chef community.
 
 *Crafting Culinary Excellence, One Byte at a Time.*
