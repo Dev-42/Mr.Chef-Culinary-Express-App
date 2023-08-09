@@ -46,7 +46,7 @@ Mr.Chef's foundation is constructed upon a robust and harmonious tech stack, sea
 
 1. Begin your journey by cloning the repository to your local machine, breathing life into Mr.Chef's world.
 2. Unlock the doors of creativity by opening the project in your preferred code editor, where each line of code paints a canvas of flavors.
-3. Evoke your senses by launching the exquisite `cover.html` file from the `CoverPage` folder in a web browser, a gateway to the culinary wonders that await.
+3. Evoke your senses by launching the exquisite `index.html` file from the `CoverPage` folder in a web browser, a gateway to the culinary wonders that await.
 4. Initiate your voyage of taste and texture – seamlessly sign in or sign up using Firebase-enabled Email or Google authentication.
 5. Navigate the artful interface, where every click reveals a treasure trove of culinary delights, waiting to be savored and relished.
 6. Indulge in the seamless transaction experience, a choreography of flavors and payments orchestrated by the real-time integration of the Razorpay API.
