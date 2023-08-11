@@ -27,7 +27,7 @@ function ans_navbar(){
         </div>
 
         <!-- logo -->
-        <a id="ans-logo-link" href="index.html"><img src="logo.svg" width="120" alt=""></a>
+        <a id="ans-logo-link" href="#"><img src="logo.svg" width="120" alt=""></a>
         <ul class="ans-nav-menu">
             <li class="ans-nav-item"><h3><a href="#ans-menu">Menu</a></h3></li>
             <li class="ans-nav-item"><h3><a href="#ans-about-us-text">About Us</a></h3></li>
@@ -46,7 +46,7 @@ function ans_navbar(){
             <!-- login and cart -->
             <div style="display: flex;" id="ans-login-cart-container">
                 <div id="ans-login-btn-container" class="ans-golden-btn">
-                <a href="../Cover Page/cover.html"><button id="ans-login-btn">SIGNOUT</button></a>
+                <a href="../Cover Page/index.html"><button id="ans-login-btn">SIGNOUT</button></a>
                     
                 </div>
                 <div id="ans-login-cart-container">
